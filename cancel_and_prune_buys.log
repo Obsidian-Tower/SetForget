@@ -1,0 +1,1139 @@
+2025-06-22 14:16:48,970 INFO --- Processing ETH/USDT ---
+2025-06-22 14:16:48,988 INFO ETH/USDT: Found 4 open BUY order(s)
+2025-06-22 14:16:49,008 INFO   ⚠️ Canceled Binance BUY order 1246778475 @ 2165.35 qty=0.0046
+2025-06-22 14:16:49,009 INFO   ➖ Deleted DB row for buy_order_id=1246778475
+2025-06-22 14:16:49,227 INFO   ⚠️ Canceled Binance BUY order 1246778481 @ 2152.36 qty=0.0046
+2025-06-22 14:16:49,227 INFO   ➖ Deleted DB row for buy_order_id=1246778481
+2025-06-22 14:16:49,446 INFO   ⚠️ Canceled Binance BUY order 1246782390 @ 2178.42 qty=0.0045
+2025-06-22 14:16:49,446 INFO   ➖ Deleted DB row for buy_order_id=1246782390
+2025-06-22 14:16:49,664 INFO   ⚠️ Canceled Binance BUY order 1246790224 @ 2139.45 qty=0.0023
+2025-06-22 14:16:49,664 INFO   ➖ Deleted DB row for buy_order_id=1246790224
+2025-06-22 14:16:49,867 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-22 14:16:49,867 INFO --- Processing BTC/USDT ---
+2025-06-22 14:16:49,885 INFO BTC/USDT: Found 4 open BUY order(s)
+2025-06-22 14:16:49,903 INFO   ⚠️ Canceled Binance BUY order 1499516603 @ 100062.54 qty=9e-05
+2025-06-22 14:16:49,904 INFO   ➖ Deleted DB row for buy_order_id=1499516603
+2025-06-22 14:16:50,122 INFO   ⚠️ Canceled Binance BUY order 1499524890 @ 99562.23 qty=0.0001
+2025-06-22 14:16:50,123 INFO   ➖ Deleted DB row for buy_order_id=1499524890
+2025-06-22 14:16:50,341 INFO   ⚠️ Canceled Binance BUY order 1499534530 @ 99064.42 qty=5e-05
+2025-06-22 14:16:50,341 INFO   ➖ Deleted DB row for buy_order_id=1499534530
+2025-06-22 14:16:50,560 INFO   ⚠️ Canceled Binance BUY order 1499550446 @ 98569.09 qty=5e-05
+2025-06-22 14:16:50,560 INFO   ➖ Deleted DB row for buy_order_id=1499550446
+2025-06-22 14:16:50,762 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-22 14:16:50,763 INFO Database connection closed.
+2025-06-22 14:17:33,227 INFO --- Processing ETH/USDT ---
+2025-06-22 14:17:33,245 INFO ETH/USDT: Found 0 open BUY order(s)
+2025-06-22 14:17:33,245 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-22 14:17:33,245 INFO --- Processing BTC/USDT ---
+2025-06-22 14:17:33,315 INFO BTC/USDT: Found 0 open BUY order(s)
+2025-06-22 14:17:33,315 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-22 14:17:33,315 INFO --- Processing DOGE/USDT ---
+2025-06-22 14:17:33,365 INFO DOGE/USDT: Found 2 open BUY order(s)
+2025-06-22 14:17:33,382 INFO   ⚠️ Canceled Binance BUY order 674402235 @ 0.1464 qty=34.0
+2025-06-22 14:17:33,382 INFO   ➖ Deleted DB row for buy_order_id=674402235
+2025-06-22 14:17:33,600 INFO   ⚠️ Canceled Binance BUY order 674420844 @ 0.1479 qty=33.0
+2025-06-22 14:17:33,600 INFO   ➖ Deleted DB row for buy_order_id=674420844
+2025-06-22 14:17:33,803 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-22 14:17:33,803 INFO Database connection closed.
+2025-06-22 14:18:35,839 INFO --- Processing ETH/USDT ---
+2025-06-22 14:18:35,857 INFO ETH/USDT: Found 0 open BUY order(s)
+2025-06-22 14:18:35,857 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-22 14:18:35,857 INFO --- Processing BTC/USDT ---
+2025-06-22 14:18:35,917 INFO BTC/USDT: Found 0 open BUY order(s)
+2025-06-22 14:18:35,917 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-22 14:18:35,917 INFO --- Processing DOGE/USDT ---
+2025-06-22 14:18:35,979 INFO DOGE/USDT: Found 2 open BUY order(s)
+2025-06-22 14:18:35,997 INFO   ⚠️ Canceled Binance BUY order 674428445 @ 0.1479 qty=33.0
+2025-06-22 14:18:35,997 INFO   ➖ Deleted DB row for buy_order_id=674428445
+2025-06-22 14:18:36,215 INFO   ⚠️ Canceled Binance BUY order 674428457 @ 0.1464 qty=34.0
+2025-06-22 14:18:36,215 INFO   ➖ Deleted DB row for buy_order_id=674428457
+2025-06-22 14:18:36,418 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-22 14:18:36,418 INFO Database connection closed.
+2025-06-22 14:19:18,934 INFO --- Processing ETH/USDT ---
+2025-06-22 14:19:18,952 INFO ETH/USDT: Found 0 open BUY order(s)
+2025-06-22 14:19:18,953 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-22 14:19:18,953 INFO --- Processing BTC/USDT ---
+2025-06-22 14:19:19,012 INFO BTC/USDT: Found 0 open BUY order(s)
+2025-06-22 14:19:19,012 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-22 14:19:19,012 INFO --- Processing DOGE/USDT ---
+2025-06-22 14:19:19,083 INFO DOGE/USDT: Found 0 open BUY order(s)
+2025-06-22 14:19:19,083 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-22 14:19:19,083 INFO Database connection closed.
+2025-06-23 02:08:12,425 INFO --- Processing ETH/USDT ---
+2025-06-23 02:08:12,443 INFO ETH/USDT: Found 1 open BUY order(s)
+2025-06-23 02:08:12,461 INFO   ⚠️ Canceled Binance BUY order 1247210134 @ 2231.5 qty=0.0044
+2025-06-23 02:08:12,462 INFO   ➖ Deleted DB row for buy_order_id=1247210134
+2025-06-23 02:08:12,665 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:08:12,665 INFO --- Processing BTC/USDT ---
+2025-06-23 02:08:12,684 INFO BTC/USDT: Found 1 open BUY order(s)
+2025-06-23 02:08:12,702 INFO   ⚠️ Canceled Binance BUY order 1499902348 @ 100565.37 qty=9e-05
+2025-06-23 02:08:12,702 INFO   ➖ Deleted DB row for buy_order_id=1499902348
+2025-06-23 02:08:12,905 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:08:12,905 INFO --- Processing DOGE/USDT ---
+2025-06-23 02:08:12,934 INFO DOGE/USDT: Found 0 open BUY order(s)
+2025-06-23 02:08:12,934 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:08:12,934 INFO --- Processing UNI/USDT ---
+2025-06-23 02:08:12,986 INFO UNI/USDT: Found 1 open BUY order(s)
+2025-06-23 02:08:13,004 INFO   ⚠️ Canceled Binance BUY order 214815796 @ 6.26 qty=0.79
+2025-06-23 02:08:13,004 INFO   ➖ Deleted DB row for buy_order_id=214815796
+2025-06-23 02:08:13,207 INFO UNI/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:08:13,207 INFO --- Processing SOL/USDT ---
+2025-06-23 02:08:13,226 INFO SOL/USDT: Found 0 open BUY order(s)
+2025-06-23 02:08:13,226 INFO SOL/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:08:13,226 INFO --- Processing XRP/USDT ---
+2025-06-23 02:08:13,286 INFO XRP/USDT: Found 0 open BUY order(s)
+2025-06-23 02:08:13,286 INFO XRP/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:08:13,286 INFO --- Processing SHIB/USDT ---
+2025-06-23 02:08:13,346 INFO SHIB/USDT: Found 0 open BUY order(s)
+2025-06-23 02:08:13,346 INFO SHIB/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:08:13,346 INFO --- Processing ADA/USDT ---
+2025-06-23 02:08:13,406 INFO ADA/USDT: Found 1 open BUY order(s)
+2025-06-23 02:08:13,424 INFO   ⚠️ Canceled Binance BUY order 516623507 @ 0.5392 qty=9.2
+2025-06-23 02:08:13,424 INFO   ➖ Deleted DB row for buy_order_id=516623507
+2025-06-23 02:08:13,626 INFO ADA/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:08:13,627 INFO --- Processing LINK/USDT ---
+2025-06-23 02:08:13,646 INFO LINK/USDT: Found 0 open BUY order(s)
+2025-06-23 02:08:13,646 INFO LINK/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:08:13,646 INFO --- Processing DOT/USDT ---
+2025-06-23 02:08:13,705 INFO DOT/USDT: Found 1 open BUY order(s)
+2025-06-23 02:08:13,723 INFO   ⚠️ Canceled Binance BUY order 127329913 @ 3.105 qty=1.61
+2025-06-23 02:08:13,724 INFO   ➖ Deleted DB row for buy_order_id=127329913
+2025-06-23 02:08:13,926 INFO DOT/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:08:13,927 INFO --- Processing LTC/USDT ---
+2025-06-23 02:08:13,945 INFO LTC/USDT: Found 1 open BUY order(s)
+2025-06-23 02:08:13,963 INFO   ⚠️ Canceled Binance BUY order 338309906 @ 79.34 qty=0.063
+2025-06-23 02:08:13,963 INFO   ➖ Deleted DB row for buy_order_id=338309906
+2025-06-23 02:08:14,165 INFO LTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:08:14,166 INFO --- Processing AAVE/USDT ---
+2025-06-23 02:08:14,184 INFO AAVE/USDT: Found 1 open BUY order(s)
+2025-06-23 02:08:14,204 INFO   ⚠️ Canceled Binance BUY order 110970948 @ 226.23 qty=0.044
+2025-06-23 02:08:14,205 INFO   ➖ Deleted DB row for buy_order_id=110970948
+2025-06-23 02:08:14,407 INFO AAVE/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:08:14,408 INFO Database connection closed.
+2025-06-23 02:09:18,323 INFO --- Processing ETH/USDT ---
+2025-06-23 02:09:18,341 INFO ETH/USDT: Found 1 open BUY order(s)
+2025-06-23 02:09:18,358 INFO   ⚠️ Canceled Binance BUY order 1247212303 @ 2231.5 qty=0.0044
+2025-06-23 02:09:18,359 INFO   ➖ Deleted DB row for buy_order_id=1247212303
+2025-06-23 02:09:18,561 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:09:18,562 INFO --- Processing BTC/USDT ---
+2025-06-23 02:09:18,582 INFO BTC/USDT: Found 1 open BUY order(s)
+2025-06-23 02:09:18,601 INFO   ⚠️ Canceled Binance BUY order 1499911904 @ 100565.37 qty=9e-05
+2025-06-23 02:09:18,601 INFO   ➖ Deleted DB row for buy_order_id=1499911904
+2025-06-23 02:09:18,804 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:09:18,804 INFO --- Processing DOGE/USDT ---
+2025-06-23 02:09:18,823 INFO DOGE/USDT: Found 1 open BUY order(s)
+2025-06-23 02:09:18,841 INFO   ⚠️ Canceled Binance BUY order 674657761 @ 0.1509 qty=66.0
+2025-06-23 02:09:18,842 INFO   ➖ Deleted DB row for buy_order_id=674657761
+2025-06-23 02:09:19,044 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:09:19,044 INFO --- Processing UNI/USDT ---
+2025-06-23 02:09:19,068 INFO UNI/USDT: Found 1 open BUY order(s)
+2025-06-23 02:09:19,085 INFO   ⚠️ Canceled Binance BUY order 214849070 @ 6.26 qty=0.79
+2025-06-23 02:09:19,086 INFO   ➖ Deleted DB row for buy_order_id=214849070
+2025-06-23 02:09:19,288 INFO UNI/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:09:19,289 INFO --- Processing SOL/USDT ---
+2025-06-23 02:09:19,307 INFO SOL/USDT: Found 0 open BUY order(s)
+2025-06-23 02:09:19,307 INFO SOL/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:09:19,308 INFO --- Processing XRP/USDT ---
+2025-06-23 02:09:19,369 INFO XRP/USDT: Found 0 open BUY order(s)
+2025-06-23 02:09:19,369 INFO XRP/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:09:19,369 INFO --- Processing SHIB/USDT ---
+2025-06-23 02:09:19,426 INFO SHIB/USDT: Found 0 open BUY order(s)
+2025-06-23 02:09:19,426 INFO SHIB/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:09:19,426 INFO --- Processing ADA/USDT ---
+2025-06-23 02:09:19,486 INFO ADA/USDT: Found 1 open BUY order(s)
+2025-06-23 02:09:19,503 INFO   ⚠️ Canceled Binance BUY order 516637563 @ 0.5424 qty=9.2
+2025-06-23 02:09:19,504 INFO   ➖ Deleted DB row for buy_order_id=516637563
+2025-06-23 02:09:19,707 INFO ADA/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:09:19,707 INFO --- Processing LINK/USDT ---
+2025-06-23 02:09:19,724 INFO LINK/USDT: Found 0 open BUY order(s)
+2025-06-23 02:09:19,724 INFO LINK/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:09:19,724 INFO --- Processing DOT/USDT ---
+2025-06-23 02:09:19,786 INFO DOT/USDT: Found 1 open BUY order(s)
+2025-06-23 02:09:19,803 INFO   ⚠️ Canceled Binance BUY order 127332525 @ 3.105 qty=1.61
+2025-06-23 02:09:19,804 INFO   ➖ Deleted DB row for buy_order_id=127332525
+2025-06-23 02:09:20,007 INFO DOT/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:09:20,008 INFO --- Processing LTC/USDT ---
+2025-06-23 02:09:20,026 INFO LTC/USDT: Found 0 open BUY order(s)
+2025-06-23 02:09:20,026 INFO LTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:09:20,026 INFO --- Processing AAVE/USDT ---
+2025-06-23 02:09:20,086 INFO AAVE/USDT: Found 1 open BUY order(s)
+2025-06-23 02:09:20,104 INFO   ⚠️ Canceled Binance BUY order 110975032 @ 226.23 qty=0.044
+2025-06-23 02:09:20,104 INFO   ➖ Deleted DB row for buy_order_id=110975032
+2025-06-23 02:09:20,307 INFO AAVE/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:09:20,308 INFO Database connection closed.
+2025-06-23 02:15:44,995 INFO --- Processing ETH/USDT ---
+2025-06-23 02:15:45,014 INFO ETH/USDT: Found 1 open BUY order(s)
+2025-06-23 02:15:45,032 INFO   ⚠️ Canceled Binance BUY order 1247212750 @ 2231.5 qty=0.0044
+2025-06-23 02:15:45,033 INFO   ➖ Deleted DB row for buy_order_id=1247212750
+2025-06-23 02:15:45,236 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:15:45,236 INFO --- Processing BTC/USDT ---
+2025-06-23 02:15:45,255 INFO BTC/USDT: Found 1 open BUY order(s)
+2025-06-23 02:15:45,275 INFO   ⚠️ Canceled Binance BUY order 1499912258 @ 100565.37 qty=9e-05
+2025-06-23 02:15:45,275 INFO   ➖ Deleted DB row for buy_order_id=1499912258
+2025-06-23 02:15:45,478 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:15:45,478 INFO --- Processing DOGE/USDT ---
+2025-06-23 02:15:45,497 INFO DOGE/USDT: Found 0 open BUY order(s)
+2025-06-23 02:15:45,497 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:15:45,497 INFO --- Processing UNI/USDT ---
+2025-06-23 02:15:45,556 INFO UNI/USDT: Found 1 open BUY order(s)
+2025-06-23 02:15:45,574 INFO   ⚠️ Canceled Binance BUY order 214849417 @ 6.26 qty=0.79
+2025-06-23 02:15:45,574 INFO   ➖ Deleted DB row for buy_order_id=214849417
+2025-06-23 02:15:45,777 INFO UNI/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:15:45,778 INFO --- Processing SOL/USDT ---
+2025-06-23 02:15:45,797 INFO SOL/USDT: Found 0 open BUY order(s)
+2025-06-23 02:15:45,797 INFO SOL/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:15:45,797 INFO --- Processing XRP/USDT ---
+2025-06-23 02:15:45,858 INFO XRP/USDT: Found 0 open BUY order(s)
+2025-06-23 02:15:45,858 INFO XRP/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:15:45,858 INFO --- Processing SHIB/USDT ---
+2025-06-23 02:15:45,918 INFO SHIB/USDT: Found 0 open BUY order(s)
+2025-06-23 02:15:45,918 INFO SHIB/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:15:45,918 INFO --- Processing ADA/USDT ---
+2025-06-23 02:15:45,977 INFO ADA/USDT: Found 1 open BUY order(s)
+2025-06-23 02:15:45,996 INFO   ⚠️ Canceled Binance BUY order 516637699 @ 0.5424 qty=9.2
+2025-06-23 02:15:45,997 INFO   ➖ Deleted DB row for buy_order_id=516637699
+2025-06-23 02:15:46,199 INFO ADA/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:15:46,200 INFO --- Processing LINK/USDT ---
+2025-06-23 02:15:46,218 INFO LINK/USDT: Found 0 open BUY order(s)
+2025-06-23 02:15:46,218 INFO LINK/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:15:46,219 INFO --- Processing DOT/USDT ---
+2025-06-23 02:15:46,278 INFO DOT/USDT: Found 1 open BUY order(s)
+2025-06-23 02:15:46,297 INFO   ⚠️ Canceled Binance BUY order 127332590 @ 3.105 qty=1.61
+2025-06-23 02:15:46,297 INFO   ➖ Deleted DB row for buy_order_id=127332590
+2025-06-23 02:15:46,499 INFO DOT/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:15:46,500 INFO --- Processing LTC/USDT ---
+2025-06-23 02:15:46,519 INFO LTC/USDT: Found 0 open BUY order(s)
+2025-06-23 02:15:46,519 INFO LTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:15:46,519 INFO --- Processing AAVE/USDT ---
+2025-06-23 02:15:46,579 INFO AAVE/USDT: Found 1 open BUY order(s)
+2025-06-23 02:15:46,597 INFO   ⚠️ Canceled Binance BUY order 110975393 @ 226.23 qty=0.044
+2025-06-23 02:15:46,597 INFO   ➖ Deleted DB row for buy_order_id=110975393
+2025-06-23 02:15:46,800 INFO AAVE/USDT: Cancellation and pruning complete.
+
+2025-06-23 02:15:46,800 INFO Database connection closed.
+2025-06-23 05:22:08,205 INFO --- Processing ETH/USDT ---
+2025-06-23 05:22:08,224 INFO ETH/USDT: Found 0 open BUY order(s)
+2025-06-23 05:22:08,224 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:08,224 INFO --- Processing BTC/USDT ---
+2025-06-23 05:22:08,284 INFO BTC/USDT: Found 0 open BUY order(s)
+2025-06-23 05:22:08,284 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:08,284 INFO --- Processing DOGE/USDT ---
+2025-06-23 05:22:08,345 INFO DOGE/USDT: Found 0 open BUY order(s)
+2025-06-23 05:22:08,345 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:08,345 INFO --- Processing UNI/USDT ---
+2025-06-23 05:22:08,405 INFO UNI/USDT: Found 1 open BUY order(s)
+2025-06-23 05:22:08,422 INFO   ⚠️ Canceled Binance BUY order 214881257 @ 6.19 qty=1.61
+2025-06-23 05:22:08,422 INFO   ➖ Deleted DB row for buy_order_id=214881257
+2025-06-23 05:22:08,626 INFO UNI/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:08,626 INFO --- Processing SOL/USDT ---
+2025-06-23 05:22:08,644 INFO SOL/USDT: Found 1 open BUY order(s)
+2025-06-23 05:22:08,662 INFO   ⚠️ Canceled Binance BUY order 679295342 @ 132.25 qty=0.075
+2025-06-23 05:22:08,663 INFO   ➖ Deleted DB row for buy_order_id=679295342
+2025-06-23 05:22:08,865 INFO SOL/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:08,866 INFO --- Processing XRP/USDT ---
+2025-06-23 05:22:08,884 INFO XRP/USDT: Found 0 open BUY order(s)
+2025-06-23 05:22:08,884 INFO XRP/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:08,885 INFO --- Processing SHIB/USDT ---
+2025-06-23 05:22:08,944 INFO SHIB/USDT: Found 0 open BUY order(s)
+2025-06-23 05:22:08,944 INFO SHIB/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:08,944 INFO --- Processing ADA/USDT ---
+2025-06-23 05:22:09,004 INFO ADA/USDT: Found 1 open BUY order(s)
+2025-06-23 05:22:09,022 INFO   ⚠️ Canceled Binance BUY order 516638602 @ 0.5424 qty=18.4
+2025-06-23 05:22:09,022 INFO   ➖ Deleted DB row for buy_order_id=516638602
+2025-06-23 05:22:09,224 INFO ADA/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:09,225 INFO --- Processing LINK/USDT ---
+2025-06-23 05:22:09,243 INFO LINK/USDT: Found 0 open BUY order(s)
+2025-06-23 05:22:09,243 INFO LINK/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:09,243 INFO --- Processing DOT/USDT ---
+2025-06-23 05:22:09,302 INFO DOT/USDT: Found 0 open BUY order(s)
+2025-06-23 05:22:09,302 INFO DOT/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:09,302 INFO --- Processing LTC/USDT ---
+2025-06-23 05:22:09,363 INFO LTC/USDT: Found 1 open BUY order(s)
+2025-06-23 05:22:09,381 INFO   ⚠️ Canceled Binance BUY order 338324561 @ 79.34 qty=0.126
+2025-06-23 05:22:09,381 INFO   ➖ Deleted DB row for buy_order_id=338324561
+2025-06-23 05:22:09,585 INFO LTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:09,585 INFO --- Processing AAVE/USDT ---
+2025-06-23 05:22:09,605 INFO AAVE/USDT: Found 1 open BUY order(s)
+2025-06-23 05:22:09,624 INFO   ⚠️ Canceled Binance BUY order 111020412 @ 231.73 qty=0.06
+2025-06-23 05:22:09,625 INFO   ➖ Deleted DB row for buy_order_id=111020412
+2025-06-23 05:22:09,829 INFO AAVE/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:09,829 INFO --- Processing BNB/USDT ---
+2025-06-23 05:22:09,849 INFO BNB/USDT: Found 0 open BUY order(s)
+2025-06-23 05:22:09,849 INFO BNB/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:09,849 INFO --- Processing FET/USDT ---
+2025-06-23 05:22:09,908 INFO FET/USDT: Found 1 open BUY order(s)
+2025-06-23 05:22:09,927 INFO   ⚠️ Canceled Binance BUY order 95162156 @ 0.575 qty=17.3
+2025-06-23 05:22:09,927 INFO   ➖ Deleted DB row for buy_order_id=95162156
+2025-06-23 05:22:10,130 INFO FET/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:10,130 INFO --- Processing OP/USDT ---
+2025-06-23 05:22:10,148 INFO OP/USDT: Found 1 open BUY order(s)
+2025-06-23 05:22:10,168 INFO   ⚠️ Canceled Binance BUY order 109673405 @ 0.483 qty=20.69
+2025-06-23 05:22:10,168 INFO   ➖ Deleted DB row for buy_order_id=109673405
+2025-06-23 05:22:10,371 INFO OP/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:10,371 INFO --- Processing ARB/USDT ---
+2025-06-23 05:22:10,389 INFO ARB/USDT: Found 1 open BUY order(s)
+2025-06-23 05:22:10,406 INFO   ⚠️ Canceled Binance BUY order 78389116 @ 0.2686 qty=37.2
+2025-06-23 05:22:10,407 INFO   ➖ Deleted DB row for buy_order_id=78389116
+2025-06-23 05:22:10,610 INFO ARB/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:10,610 INFO --- Processing CRV/USDT ---
+2025-06-23 05:22:10,628 INFO CRV/USDT: Found 0 open BUY order(s)
+2025-06-23 05:22:10,628 INFO CRV/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:22:10,629 INFO Database connection closed.
+2025-06-23 05:49:16,555 INFO --- Processing ETH/USDT ---
+2025-06-23 05:49:16,572 INFO ETH/USDT: Found 1 open BUY order(s)
+2025-06-23 05:49:16,590 INFO   ⚠️ Canceled Binance BUY order 1247266187 @ 2231.5 qty=0.0062
+2025-06-23 05:49:16,590 INFO   ➖ Deleted DB row for buy_order_id=1247266187
+2025-06-23 05:49:16,795 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:16,795 INFO --- Processing BTC/USDT ---
+2025-06-23 05:49:16,812 INFO BTC/USDT: Found 0 open BUY order(s)
+2025-06-23 05:49:16,812 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:16,812 INFO --- Processing DOGE/USDT ---
+2025-06-23 05:49:16,873 INFO DOGE/USDT: Found 0 open BUY order(s)
+2025-06-23 05:49:16,873 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:16,873 INFO --- Processing UNI/USDT ---
+2025-06-23 05:49:16,933 INFO UNI/USDT: Found 0 open BUY order(s)
+2025-06-23 05:49:16,933 INFO UNI/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:16,933 INFO --- Processing SOL/USDT ---
+2025-06-23 05:49:16,994 INFO SOL/USDT: Found 0 open BUY order(s)
+2025-06-23 05:49:16,994 INFO SOL/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:16,994 INFO --- Processing XRP/USDT ---
+2025-06-23 05:49:17,055 INFO XRP/USDT: Found 1 open BUY order(s)
+2025-06-23 05:49:17,073 INFO   ⚠️ Canceled Binance BUY order 214374534 @ 2.01 qty=6.9
+2025-06-23 05:49:17,073 INFO   ➖ Deleted DB row for buy_order_id=214374534
+2025-06-23 05:49:17,275 INFO XRP/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:17,275 INFO --- Processing SHIB/USDT ---
+2025-06-23 05:49:17,293 INFO SHIB/USDT: Found 1 open BUY order(s)
+2025-06-23 05:49:17,310 INFO   ⚠️ Canceled Binance BUY order 307816725 @ 1.06e-05 qty=1320754.0
+2025-06-23 05:49:17,310 INFO   ➖ Deleted DB row for buy_order_id=307816725
+2025-06-23 05:49:17,513 INFO SHIB/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:17,513 INFO --- Processing ADA/USDT ---
+2025-06-23 05:49:17,531 INFO ADA/USDT: Found 1 open BUY order(s)
+2025-06-23 05:49:17,548 INFO   ⚠️ Canceled Binance BUY order 516656740 @ 0.5457 qty=25.6
+2025-06-23 05:49:17,549 INFO   ➖ Deleted DB row for buy_order_id=516656740
+2025-06-23 05:49:17,751 INFO ADA/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:17,752 INFO --- Processing LINK/USDT ---
+2025-06-23 05:49:17,769 INFO LINK/USDT: Found 1 open BUY order(s)
+2025-06-23 05:49:17,786 INFO   ⚠️ Canceled Binance BUY order 170872408 @ 11.7 qty=1.19
+2025-06-23 05:49:17,786 INFO   ➖ Deleted DB row for buy_order_id=170872408
+2025-06-23 05:49:17,989 INFO LINK/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:17,989 INFO --- Processing DOT/USDT ---
+2025-06-23 05:49:18,007 INFO DOT/USDT: Found 0 open BUY order(s)
+2025-06-23 05:49:18,007 INFO DOT/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:18,007 INFO --- Processing LTC/USDT ---
+2025-06-23 05:49:18,068 INFO LTC/USDT: Found 1 open BUY order(s)
+2025-06-23 05:49:18,085 INFO   ⚠️ Canceled Binance BUY order 338330789 @ 79.98 qty=0.175
+2025-06-23 05:49:18,086 INFO   ➖ Deleted DB row for buy_order_id=338330789
+2025-06-23 05:49:18,289 INFO LTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:18,289 INFO --- Processing AAVE/USDT ---
+2025-06-23 05:49:18,307 INFO AAVE/USDT: Found 0 open BUY order(s)
+2025-06-23 05:49:18,307 INFO AAVE/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:18,307 INFO --- Processing BNB/USDT ---
+2025-06-23 05:49:18,367 INFO BNB/USDT: Found 0 open BUY order(s)
+2025-06-23 05:49:18,367 INFO BNB/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:18,367 INFO --- Processing FET/USDT ---
+2025-06-23 05:49:18,428 INFO FET/USDT: Found 1 open BUY order(s)
+2025-06-23 05:49:18,445 INFO   ⚠️ Canceled Binance BUY order 95165337 @ 0.587 qty=23.8
+2025-06-23 05:49:18,446 INFO   ➖ Deleted DB row for buy_order_id=95165337
+2025-06-23 05:49:18,648 INFO FET/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:18,649 INFO --- Processing OP/USDT ---
+2025-06-23 05:49:18,666 INFO OP/USDT: Found 0 open BUY order(s)
+2025-06-23 05:49:18,666 INFO OP/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:18,666 INFO --- Processing ARB/USDT ---
+2025-06-23 05:49:18,727 INFO ARB/USDT: Found 1 open BUY order(s)
+2025-06-23 05:49:18,744 INFO   ⚠️ Canceled Binance BUY order 78411539 @ 0.267 qty=52.4
+2025-06-23 05:49:18,744 INFO   ➖ Deleted DB row for buy_order_id=78411539
+2025-06-23 05:49:18,947 INFO ARB/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:18,948 INFO --- Processing CRV/USDT ---
+2025-06-23 05:49:18,965 INFO CRV/USDT: Found 0 open BUY order(s)
+2025-06-23 05:49:18,965 INFO CRV/USDT: Cancellation and pruning complete.
+
+2025-06-23 05:49:18,966 INFO Database connection closed.
+2025-06-23 15:40:14,641 INFO --- Processing ETH/USDT ---
+2025-06-23 15:40:14,675 INFO ETH/USDT: Found 0 open BUY order(s)
+2025-06-23 15:40:14,675 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:14,675 INFO --- Processing BTC/USDT ---
+2025-06-23 15:40:14,736 INFO BTC/USDT: Found 0 open BUY order(s)
+2025-06-23 15:40:14,736 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:14,736 INFO --- Processing DOGE/USDT ---
+2025-06-23 15:40:14,795 INFO DOGE/USDT: Found 1 open BUY order(s)
+2025-06-23 15:40:14,829 INFO   ⚠️ Canceled Binance BUY order 674779565 @ 0.1524 qty=196.0
+2025-06-23 15:40:14,829 INFO   ➖ Deleted DB row for buy_order_id=674779565
+2025-06-23 15:40:15,032 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:15,032 INFO --- Processing UNI/USDT ---
+2025-06-23 15:40:15,067 INFO UNI/USDT: Found 1 open BUY order(s)
+2025-06-23 15:40:15,100 INFO   ⚠️ Canceled Binance BUY order 215114724 @ 6.19 qty=4.84
+2025-06-23 15:40:15,101 INFO   ➖ Deleted DB row for buy_order_id=215114724
+2025-06-23 15:40:15,303 INFO UNI/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:15,304 INFO --- Processing SOL/USDT ---
+2025-06-23 15:40:15,337 INFO SOL/USDT: Found 1 open BUY order(s)
+2025-06-23 15:40:15,371 INFO   ⚠️ Canceled Binance BUY order 679538553 @ 133.59 qty=0.224
+2025-06-23 15:40:15,372 INFO   ➖ Deleted DB row for buy_order_id=679538553
+2025-06-23 15:40:15,574 INFO SOL/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:15,574 INFO --- Processing XRP/USDT ---
+2025-06-23 15:40:15,609 INFO XRP/USDT: Found 1 open BUY order(s)
+2025-06-23 15:40:15,643 INFO   ⚠️ Canceled Binance BUY order 214541832 @ 2.01 qty=14.9
+2025-06-23 15:40:15,643 INFO   ➖ Deleted DB row for buy_order_id=214541832
+2025-06-23 15:40:15,846 INFO XRP/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:15,846 INFO --- Processing SHIB/USDT ---
+2025-06-23 15:40:15,879 INFO SHIB/USDT: Found 1 open BUY order(s)
+2025-06-23 15:40:15,913 INFO   ⚠️ Canceled Binance BUY order 307817119 @ 1.071e-05 qty=2801120.0
+2025-06-23 15:40:15,914 INFO   ➖ Deleted DB row for buy_order_id=307817119
+2025-06-23 15:40:16,116 INFO SHIB/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:16,116 INFO --- Processing ADA/USDT ---
+2025-06-23 15:40:16,150 INFO ADA/USDT: Found 1 open BUY order(s)
+2025-06-23 15:40:16,184 INFO   ⚠️ Canceled Binance BUY order 516741978 @ 0.5424 qty=55.3
+2025-06-23 15:40:16,184 INFO   ➖ Deleted DB row for buy_order_id=516741978
+2025-06-23 15:40:16,387 INFO ADA/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:16,387 INFO --- Processing LINK/USDT ---
+2025-06-23 15:40:16,421 INFO LINK/USDT: Found 1 open BUY order(s)
+2025-06-23 15:40:16,454 INFO   ⚠️ Canceled Binance BUY order 170936622 @ 11.7 qty=2.56
+2025-06-23 15:40:16,454 INFO   ➖ Deleted DB row for buy_order_id=170936622
+2025-06-23 15:40:16,657 INFO LINK/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:16,657 INFO --- Processing DOT/USDT ---
+2025-06-23 15:40:16,690 INFO DOT/USDT: Found 1 open BUY order(s)
+2025-06-23 15:40:16,724 INFO   ⚠️ Canceled Binance BUY order 127362888 @ 3.21 qty=9.34
+2025-06-23 15:40:16,725 INFO   ➖ Deleted DB row for buy_order_id=127362888
+2025-06-23 15:40:16,928 INFO DOT/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:16,928 INFO --- Processing LTC/USDT ---
+2025-06-23 15:40:16,961 INFO LTC/USDT: Found 1 open BUY order(s)
+2025-06-23 15:40:16,995 INFO   ⚠️ Canceled Binance BUY order 338355932 @ 81.26 qty=0.369
+2025-06-23 15:40:16,995 INFO   ➖ Deleted DB row for buy_order_id=338355932
+2025-06-23 15:40:17,198 INFO LTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:17,198 INFO --- Processing AAVE/USDT ---
+2025-06-23 15:40:17,232 INFO AAVE/USDT: Found 1 open BUY order(s)
+2025-06-23 15:40:17,266 INFO   ⚠️ Canceled Binance BUY order 111194261 @ 228.98 qty=0.131
+2025-06-23 15:40:17,266 INFO   ➖ Deleted DB row for buy_order_id=111194261
+2025-06-23 15:40:17,468 INFO AAVE/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:17,469 INFO --- Processing BNB/USDT ---
+2025-06-23 15:40:17,502 INFO BNB/USDT: Found 1 open BUY order(s)
+2025-06-23 15:40:17,535 INFO   ⚠️ Canceled Binance BUY order 532798244 @ 620.0 qty=0.048
+2025-06-23 15:40:17,535 INFO   ➖ Deleted DB row for buy_order_id=532798244
+2025-06-23 15:40:17,738 INFO BNB/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:17,738 INFO --- Processing FET/USDT ---
+2025-06-23 15:40:17,772 INFO FET/USDT: Found 1 open BUY order(s)
+2025-06-23 15:40:17,806 INFO   ⚠️ Canceled Binance BUY order 95179604 @ 0.599 qty=50.1
+2025-06-23 15:40:17,806 INFO   ➖ Deleted DB row for buy_order_id=95179604
+2025-06-23 15:40:18,009 INFO FET/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:18,009 INFO --- Processing OP/USDT ---
+2025-06-23 15:40:18,043 INFO OP/USDT: Found 0 open BUY order(s)
+2025-06-23 15:40:18,043 INFO OP/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:18,043 INFO --- Processing ARB/USDT ---
+2025-06-23 15:40:18,103 INFO ARB/USDT: Found 1 open BUY order(s)
+2025-06-23 15:40:18,137 INFO   ⚠️ Canceled Binance BUY order 78745132 @ 0.2703 qty=111.0
+2025-06-23 15:40:18,137 INFO   ➖ Deleted DB row for buy_order_id=78745132
+2025-06-23 15:40:18,340 INFO ARB/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:18,340 INFO --- Processing CRV/USDT ---
+2025-06-23 15:40:18,374 INFO CRV/USDT: Found 0 open BUY order(s)
+2025-06-23 15:40:18,374 INFO CRV/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:40:18,374 INFO Database connection closed.
+2025-06-23 15:54:27,024 INFO --- Processing ETH/USDT ---
+2025-06-23 15:54:27,060 INFO ETH/USDT: Found 1 open BUY order(s)
+2025-06-23 15:54:27,093 INFO   ⚠️ Canceled Binance BUY order 1247532524 @ 2244.97 qty=0.0062
+2025-06-23 15:54:27,094 INFO   ➖ Deleted DB row for buy_order_id=1247532524
+2025-06-23 15:54:27,296 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:27,297 INFO --- Processing BTC/USDT ---
+2025-06-23 15:54:27,557 INFO BTC/USDT: Found 1 open BUY order(s)
+2025-06-23 15:54:27,591 INFO   ⚠️ Canceled Binance BUY order 1500175046 @ 101070.72 qty=0.00013
+2025-06-23 15:54:27,592 INFO   ➖ Deleted DB row for buy_order_id=1500175046
+2025-06-23 15:54:27,794 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:27,795 INFO --- Processing DOGE/USDT ---
+2025-06-23 15:54:27,828 INFO DOGE/USDT: Found 0 open BUY order(s)
+2025-06-23 15:54:27,828 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:27,828 INFO --- Processing UNI/USDT ---
+2025-06-23 15:54:27,888 INFO UNI/USDT: Found 1 open BUY order(s)
+2025-06-23 15:54:27,923 INFO   ⚠️ Canceled Binance BUY order 215158749 @ 6.13 qty=2.28
+2025-06-23 15:54:27,924 INFO   ➖ Deleted DB row for buy_order_id=215158749
+2025-06-23 15:54:28,126 INFO UNI/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:28,127 INFO --- Processing SOL/USDT ---
+2025-06-23 15:54:28,160 INFO SOL/USDT: Found 1 open BUY order(s)
+2025-06-23 15:54:28,193 INFO   ⚠️ Canceled Binance BUY order 679548072 @ 132.25 qty=0.105
+2025-06-23 15:54:28,193 INFO   ➖ Deleted DB row for buy_order_id=679548072
+2025-06-23 15:54:28,396 INFO SOL/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:28,396 INFO --- Processing XRP/USDT ---
+2025-06-23 15:54:28,431 INFO XRP/USDT: Found 1 open BUY order(s)
+2025-06-23 15:54:28,465 INFO   ⚠️ Canceled Binance BUY order 214599290 @ 1.99 qty=7.0
+2025-06-23 15:54:28,465 INFO   ➖ Deleted DB row for buy_order_id=214599290
+2025-06-23 15:54:28,668 INFO XRP/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:28,668 INFO --- Processing SHIB/USDT ---
+2025-06-23 15:54:28,701 INFO SHIB/USDT: Found 1 open BUY order(s)
+2025-06-23 15:54:28,736 INFO   ⚠️ Canceled Binance BUY order 307844862 @ 1.082e-05 qty=1293900.0
+2025-06-23 15:54:28,736 INFO   ➖ Deleted DB row for buy_order_id=307844862
+2025-06-23 15:54:28,940 INFO SHIB/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:28,940 INFO --- Processing ADA/USDT ---
+2025-06-23 15:54:28,975 INFO ADA/USDT: Found 0 open BUY order(s)
+2025-06-23 15:54:28,975 INFO ADA/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:28,975 INFO --- Processing LINK/USDT ---
+2025-06-23 15:54:29,034 INFO LINK/USDT: Found 1 open BUY order(s)
+2025-06-23 15:54:29,070 INFO   ⚠️ Canceled Binance BUY order 170940097 @ 11.7 qty=1.19
+2025-06-23 15:54:29,070 INFO   ➖ Deleted DB row for buy_order_id=170940097
+2025-06-23 15:54:29,273 INFO LINK/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:29,273 INFO --- Processing DOT/USDT ---
+2025-06-23 15:54:29,308 INFO DOT/USDT: Found 1 open BUY order(s)
+2025-06-23 15:54:29,341 INFO   ⚠️ Canceled Binance BUY order 127363392 @ 3.175 qty=4.4
+2025-06-23 15:54:29,342 INFO   ➖ Deleted DB row for buy_order_id=127363392
+2025-06-23 15:54:29,544 INFO DOT/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:29,545 INFO --- Processing LTC/USDT ---
+2025-06-23 15:54:29,578 INFO LTC/USDT: Found 1 open BUY order(s)
+2025-06-23 15:54:29,612 INFO   ⚠️ Canceled Binance BUY order 338357444 @ 80.62 qty=0.173
+2025-06-23 15:54:29,612 INFO   ➖ Deleted DB row for buy_order_id=338357444
+2025-06-23 15:54:29,815 INFO LTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:29,815 INFO --- Processing AAVE/USDT ---
+2025-06-23 15:54:29,850 INFO AAVE/USDT: Found 1 open BUY order(s)
+2025-06-23 15:54:29,884 INFO   ⚠️ Canceled Binance BUY order 111201205 @ 226.23 qty=0.061
+2025-06-23 15:54:29,884 INFO   ➖ Deleted DB row for buy_order_id=111201205
+2025-06-23 15:54:30,087 INFO AAVE/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:30,087 INFO --- Processing BNB/USDT ---
+2025-06-23 15:54:30,121 INFO BNB/USDT: Found 1 open BUY order(s)
+2025-06-23 15:54:30,155 INFO   ⚠️ Canceled Binance BUY order 532799309 @ 620.0 qty=0.022
+2025-06-23 15:54:30,155 INFO   ➖ Deleted DB row for buy_order_id=532799309
+2025-06-23 15:54:30,357 INFO BNB/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:30,357 INFO --- Processing FET/USDT ---
+2025-06-23 15:54:30,390 INFO FET/USDT: Found 1 open BUY order(s)
+2025-06-23 15:54:30,424 INFO   ⚠️ Canceled Binance BUY order 95180116 @ 0.593 qty=23.6
+2025-06-23 15:54:30,424 INFO   ➖ Deleted DB row for buy_order_id=95180116
+2025-06-23 15:54:30,627 INFO FET/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:30,628 INFO --- Processing OP/USDT ---
+2025-06-23 15:54:30,662 INFO OP/USDT: Found 0 open BUY order(s)
+2025-06-23 15:54:30,662 INFO OP/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:30,662 INFO --- Processing ARB/USDT ---
+2025-06-23 15:54:30,722 INFO ARB/USDT: Found 1 open BUY order(s)
+2025-06-23 15:54:30,756 INFO   ⚠️ Canceled Binance BUY order 78875276 @ 0.2686 qty=52.1
+2025-06-23 15:54:30,756 INFO   ➖ Deleted DB row for buy_order_id=78875276
+2025-06-23 15:54:30,959 INFO ARB/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:30,960 INFO --- Processing CRV/USDT ---
+2025-06-23 15:54:30,993 INFO CRV/USDT: Found 0 open BUY order(s)
+2025-06-23 15:54:30,993 INFO CRV/USDT: Cancellation and pruning complete.
+
+2025-06-23 15:54:30,993 INFO Database connection closed.
+2025-06-23 16:05:35,432 INFO --- Processing ETH/USDT ---
+2025-06-23 16:05:35,451 INFO ETH/USDT: Found 0 open BUY order(s)
+2025-06-23 16:05:35,451 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:35,451 INFO --- Processing BTC/USDT ---
+2025-06-23 16:05:35,511 INFO BTC/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:35,531 INFO   ⚠️ Canceled Binance BUY order 1500178843 @ 101070.72 qty=6e-05
+2025-06-23 16:05:35,532 INFO   ➖ Deleted DB row for buy_order_id=1500178843
+2025-06-23 16:05:35,735 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:35,735 INFO --- Processing DOGE/USDT ---
+2025-06-23 16:05:35,753 INFO DOGE/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:35,772 INFO   ⚠️ Canceled Binance BUY order 674784841 @ 0.1509 qty=46.0
+2025-06-23 16:05:35,772 INFO   ➖ Deleted DB row for buy_order_id=674784841
+2025-06-23 16:05:35,976 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:35,976 INFO --- Processing UNI/USDT ---
+2025-06-23 16:05:35,994 INFO UNI/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:36,016 INFO   ⚠️ Canceled Binance BUY order 215160412 @ 6.13 qty=1.14
+2025-06-23 16:05:36,016 INFO   ➖ Deleted DB row for buy_order_id=215160412
+2025-06-23 16:05:36,219 INFO UNI/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:36,219 INFO --- Processing SOL/USDT ---
+2025-06-23 16:05:36,238 INFO SOL/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:36,255 INFO   ⚠️ Canceled Binance BUY order 679551221 @ 132.25 qty=0.052
+2025-06-23 16:05:36,256 INFO   ➖ Deleted DB row for buy_order_id=679551221
+2025-06-23 16:05:36,458 INFO SOL/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:36,459 INFO --- Processing XRP/USDT ---
+2025-06-23 16:05:36,478 INFO XRP/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:36,496 INFO   ⚠️ Canceled Binance BUY order 214605239 @ 1.99 qty=3.5
+2025-06-23 16:05:36,496 INFO   ➖ Deleted DB row for buy_order_id=214605239
+2025-06-23 16:05:36,699 INFO XRP/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:36,699 INFO --- Processing SHIB/USDT ---
+2025-06-23 16:05:36,717 INFO SHIB/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:36,735 INFO   ⚠️ Canceled Binance BUY order 307845005 @ 1.082e-05 qty=646950.0
+2025-06-23 16:05:36,735 INFO   ➖ Deleted DB row for buy_order_id=307845005
+2025-06-23 16:05:36,938 INFO SHIB/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:36,939 INFO --- Processing ADA/USDT ---
+2025-06-23 16:05:36,957 INFO ADA/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:36,975 INFO   ⚠️ Canceled Binance BUY order 516746016 @ 0.5392 qty=12.9
+2025-06-23 16:05:36,975 INFO   ➖ Deleted DB row for buy_order_id=516746016
+2025-06-23 16:05:37,178 INFO ADA/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:37,178 INFO --- Processing LINK/USDT ---
+2025-06-23 16:05:37,200 INFO LINK/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:37,217 INFO   ⚠️ Canceled Binance BUY order 170946998 @ 11.7 qty=0.59
+2025-06-23 16:05:37,217 INFO   ➖ Deleted DB row for buy_order_id=170946998
+2025-06-23 16:05:37,421 INFO LINK/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:37,422 INFO --- Processing DOT/USDT ---
+2025-06-23 16:05:37,440 INFO DOT/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:37,458 INFO   ⚠️ Canceled Binance BUY order 127363538 @ 3.175 qty=2.2
+2025-06-23 16:05:37,459 INFO   ➖ Deleted DB row for buy_order_id=127363538
+2025-06-23 16:05:37,662 INFO DOT/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:37,662 INFO --- Processing LTC/USDT ---
+2025-06-23 16:05:37,680 INFO LTC/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:37,699 INFO   ⚠️ Canceled Binance BUY order 338357926 @ 80.62 qty=0.086
+2025-06-23 16:05:37,700 INFO   ➖ Deleted DB row for buy_order_id=338357926
+2025-06-23 16:05:37,902 INFO LTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:37,903 INFO --- Processing AAVE/USDT ---
+2025-06-23 16:05:37,921 INFO AAVE/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:37,938 INFO   ⚠️ Canceled Binance BUY order 111202977 @ 226.23 qty=0.03
+2025-06-23 16:05:37,939 INFO   ➖ Deleted DB row for buy_order_id=111202977
+2025-06-23 16:05:38,142 INFO AAVE/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:38,142 INFO --- Processing BNB/USDT ---
+2025-06-23 16:05:38,159 INFO BNB/USDT: Found 0 open BUY order(s)
+2025-06-23 16:05:38,160 INFO BNB/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:38,160 INFO --- Processing FET/USDT ---
+2025-06-23 16:05:38,222 INFO FET/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:38,239 INFO   ⚠️ Canceled Binance BUY order 95180240 @ 0.593 qty=11.8
+2025-06-23 16:05:38,240 INFO   ➖ Deleted DB row for buy_order_id=95180240
+2025-06-23 16:05:38,442 INFO FET/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:38,443 INFO --- Processing OP/USDT ---
+2025-06-23 16:05:38,461 INFO OP/USDT: Found 0 open BUY order(s)
+2025-06-23 16:05:38,461 INFO OP/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:38,461 INFO --- Processing ARB/USDT ---
+2025-06-23 16:05:38,521 INFO ARB/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:38,539 INFO   ⚠️ Canceled Binance BUY order 78879239 @ 0.2686 qty=26.0
+2025-06-23 16:05:38,540 INFO   ➖ Deleted DB row for buy_order_id=78879239
+2025-06-23 16:05:38,743 INFO ARB/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:38,743 INFO --- Processing CRV/USDT ---
+2025-06-23 16:05:38,764 INFO CRV/USDT: Found 1 open BUY order(s)
+2025-06-23 16:05:38,782 INFO   ⚠️ Canceled Binance BUY order 67742100 @ 0.5156 qty=13.5
+2025-06-23 16:05:38,783 INFO   ➖ Deleted DB row for buy_order_id=67742100
+2025-06-23 16:05:38,985 INFO CRV/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:05:38,986 INFO Database connection closed.
+2025-06-23 16:20:35,369 INFO --- Processing ETH/USDT ---
+2025-06-23 16:20:35,387 INFO ETH/USDT: Found 1 open BUY order(s)
+2025-06-23 16:20:35,405 INFO   ⚠️ Canceled Binance BUY order 1247556281 @ 2218.11 qty=0.0022
+2025-06-23 16:20:35,405 INFO   ➖ Deleted DB row for buy_order_id=1247556281
+2025-06-23 16:20:35,608 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:35,608 INFO --- Processing BTC/USDT ---
+2025-06-23 16:20:35,626 INFO BTC/USDT: Found 1 open BUY order(s)
+2025-06-23 16:20:35,644 INFO   ⚠️ Canceled Binance BUY order 1500188308 @ 100565.37 qty=4e-05
+2025-06-23 16:20:35,644 INFO   ➖ Deleted DB row for buy_order_id=1500188308
+2025-06-23 16:20:35,847 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:35,847 INFO --- Processing DOGE/USDT ---
+2025-06-23 16:20:35,865 INFO DOGE/USDT: Found 1 open BUY order(s)
+2025-06-23 16:20:35,883 INFO   ⚠️ Canceled Binance BUY order 674792208 @ 0.1494 qty=33.0
+2025-06-23 16:20:35,883 INFO   ➖ Deleted DB row for buy_order_id=674792208
+2025-06-23 16:20:36,086 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:36,086 INFO --- Processing UNI/USDT ---
+2025-06-23 16:20:36,105 INFO UNI/USDT: Found 1 open BUY order(s)
+2025-06-23 16:20:36,133 INFO   ⚠️ Canceled Binance BUY order 215167882 @ 6.07 qty=0.82
+2025-06-23 16:20:36,133 INFO   ➖ Deleted DB row for buy_order_id=215167882
+2025-06-23 16:20:36,336 INFO UNI/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:36,336 INFO --- Processing SOL/USDT ---
+2025-06-23 16:20:36,355 INFO SOL/USDT: Found 1 open BUY order(s)
+2025-06-23 16:20:36,372 INFO   ⚠️ Canceled Binance BUY order 679561685 @ 130.93 qty=0.038
+2025-06-23 16:20:36,373 INFO   ➖ Deleted DB row for buy_order_id=679561685
+2025-06-23 16:20:36,576 INFO SOL/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:36,576 INFO --- Processing XRP/USDT ---
+2025-06-23 16:20:36,595 INFO XRP/USDT: Found 1 open BUY order(s)
+2025-06-23 16:20:36,613 INFO   ⚠️ Canceled Binance BUY order 214619797 @ 1.97 qty=2.5
+2025-06-23 16:20:36,613 INFO   ➖ Deleted DB row for buy_order_id=214619797
+2025-06-23 16:20:36,815 INFO XRP/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:36,816 INFO --- Processing SHIB/USDT ---
+2025-06-23 16:20:36,836 INFO SHIB/USDT: Found 1 open BUY order(s)
+2025-06-23 16:20:36,855 INFO   ⚠️ Canceled Binance BUY order 307846169 @ 1.071e-05 qty=466853.0
+2025-06-23 16:20:36,855 INFO   ➖ Deleted DB row for buy_order_id=307846169
+2025-06-23 16:20:37,058 INFO SHIB/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:37,058 INFO --- Processing ADA/USDT ---
+2025-06-23 16:20:37,075 INFO ADA/USDT: Found 1 open BUY order(s)
+2025-06-23 16:20:37,092 INFO   ⚠️ Canceled Binance BUY order 516749443 @ 0.5359 qty=9.3
+2025-06-23 16:20:37,092 INFO   ➖ Deleted DB row for buy_order_id=516749443
+2025-06-23 16:20:37,295 INFO ADA/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:37,295 INFO --- Processing LINK/USDT ---
+2025-06-23 16:20:37,314 INFO LINK/USDT: Found 1 open BUY order(s)
+2025-06-23 16:20:37,333 INFO   ⚠️ Canceled Binance BUY order 170953664 @ 11.59 qty=0.43
+2025-06-23 16:20:37,333 INFO   ➖ Deleted DB row for buy_order_id=170953664
+2025-06-23 16:20:37,536 INFO LINK/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:37,536 INFO --- Processing DOT/USDT ---
+2025-06-23 16:20:37,554 INFO DOT/USDT: Found 0 open BUY order(s)
+2025-06-23 16:20:37,554 INFO DOT/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:37,554 INFO --- Processing LTC/USDT ---
+2025-06-23 16:20:37,614 INFO LTC/USDT: Found 0 open BUY order(s)
+2025-06-23 16:20:37,614 INFO LTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:37,614 INFO --- Processing AAVE/USDT ---
+2025-06-23 16:20:37,675 INFO AAVE/USDT: Found 1 open BUY order(s)
+2025-06-23 16:20:37,692 INFO   ⚠️ Canceled Binance BUY order 111210914 @ 223.52 qty=0.022
+2025-06-23 16:20:37,693 INFO   ➖ Deleted DB row for buy_order_id=111210914
+2025-06-23 16:20:37,895 INFO AAVE/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:37,895 INFO --- Processing BNB/USDT ---
+2025-06-23 16:20:37,913 INFO BNB/USDT: Found 0 open BUY order(s)
+2025-06-23 16:20:37,913 INFO BNB/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:37,913 INFO --- Processing FET/USDT ---
+2025-06-23 16:20:37,973 INFO FET/USDT: Found 0 open BUY order(s)
+2025-06-23 16:20:37,973 INFO FET/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:37,973 INFO --- Processing OP/USDT ---
+2025-06-23 16:20:38,033 INFO OP/USDT: Found 0 open BUY order(s)
+2025-06-23 16:20:38,034 INFO OP/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:38,034 INFO --- Processing ARB/USDT ---
+2025-06-23 16:20:38,093 INFO ARB/USDT: Found 1 open BUY order(s)
+2025-06-23 16:20:38,110 INFO   ⚠️ Canceled Binance BUY order 78893201 @ 0.2686 qty=18.6
+2025-06-23 16:20:38,110 INFO   ➖ Deleted DB row for buy_order_id=78893201
+2025-06-23 16:20:38,313 INFO ARB/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:38,313 INFO --- Processing CRV/USDT ---
+2025-06-23 16:20:38,330 INFO CRV/USDT: Found 1 open BUY order(s)
+2025-06-23 16:20:38,348 INFO   ⚠️ Canceled Binance BUY order 67743155 @ 0.5105 qty=9.7
+2025-06-23 16:20:38,348 INFO   ➖ Deleted DB row for buy_order_id=67743155
+2025-06-23 16:20:38,551 INFO CRV/USDT: Cancellation and pruning complete.
+
+2025-06-23 16:20:38,551 INFO Database connection closed.
+2025-06-23 17:39:31,184 INFO --- Processing ETH/USDT ---
+2025-06-23 17:39:31,245 INFO ETH/USDT: Found 0 open BUY order(s)
+2025-06-23 17:39:31,246 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:31,246 INFO --- Processing BTC/USDT ---
+2025-06-23 17:39:31,280 INFO BTC/USDT: Found 0 open BUY order(s)
+2025-06-23 17:39:31,280 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:31,280 INFO --- Processing DOGE/USDT ---
+2025-06-23 17:39:31,340 INFO DOGE/USDT: Found 0 open BUY order(s)
+2025-06-23 17:39:31,340 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:31,340 INFO --- Processing UNI/USDT ---
+2025-06-23 17:39:31,399 INFO UNI/USDT: Found 0 open BUY order(s)
+2025-06-23 17:39:31,399 INFO UNI/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:31,399 INFO --- Processing SOL/USDT ---
+2025-06-23 17:39:31,461 INFO SOL/USDT: Found 0 open BUY order(s)
+2025-06-23 17:39:31,461 INFO SOL/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:31,461 INFO --- Processing XRP/USDT ---
+2025-06-23 17:39:31,522 INFO XRP/USDT: Found 0 open BUY order(s)
+2025-06-23 17:39:31,522 INFO XRP/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:31,522 INFO --- Processing SHIB/USDT ---
+2025-06-23 17:39:31,581 INFO SHIB/USDT: Found 1 open BUY order(s)
+2025-06-23 17:39:31,615 INFO   ⚠️ Canceled Binance BUY order 307855771 @ 1.103e-05 qty=271985.0
+2025-06-23 17:39:31,616 INFO   ➖ Deleted DB row for buy_order_id=307855771
+2025-06-23 17:39:31,818 INFO SHIB/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:31,819 INFO --- Processing ADA/USDT ---
+2025-06-23 17:39:31,852 INFO ADA/USDT: Found 0 open BUY order(s)
+2025-06-23 17:39:31,852 INFO ADA/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:31,852 INFO --- Processing LINK/USDT ---
+2025-06-23 17:39:31,913 INFO LINK/USDT: Found 0 open BUY order(s)
+2025-06-23 17:39:31,913 INFO LINK/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:31,913 INFO --- Processing DOT/USDT ---
+2025-06-23 17:39:31,973 INFO DOT/USDT: Found 0 open BUY order(s)
+2025-06-23 17:39:31,973 INFO DOT/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:31,973 INFO --- Processing LTC/USDT ---
+2025-06-23 17:39:32,033 INFO LTC/USDT: Found 1 open BUY order(s)
+2025-06-23 17:39:32,067 INFO   ⚠️ Canceled Binance BUY order 338364680 @ 81.26 qty=0.036
+2025-06-23 17:39:32,068 INFO   ➖ Deleted DB row for buy_order_id=338364680
+2025-06-23 17:39:32,270 INFO LTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:32,270 INFO --- Processing AAVE/USDT ---
+2025-06-23 17:39:32,304 INFO AAVE/USDT: Found 0 open BUY order(s)
+2025-06-23 17:39:32,304 INFO AAVE/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:32,304 INFO --- Processing BNB/USDT ---
+2025-06-23 17:39:32,365 INFO BNB/USDT: Found 0 open BUY order(s)
+2025-06-23 17:39:32,365 INFO BNB/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:32,365 INFO --- Processing FET/USDT ---
+2025-06-23 17:39:32,424 INFO FET/USDT: Found 0 open BUY order(s)
+2025-06-23 17:39:32,425 INFO FET/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:32,425 INFO --- Processing OP/USDT ---
+2025-06-23 17:39:32,486 INFO OP/USDT: Found 0 open BUY order(s)
+2025-06-23 17:39:32,486 INFO OP/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:32,486 INFO --- Processing ARB/USDT ---
+2025-06-23 17:39:32,546 INFO ARB/USDT: Found 1 open BUY order(s)
+2025-06-23 17:39:32,580 INFO   ⚠️ Canceled Binance BUY order 79000257 @ 0.2719 qty=11.0
+2025-06-23 17:39:32,580 INFO   ➖ Deleted DB row for buy_order_id=79000257
+2025-06-23 17:39:32,782 INFO ARB/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:32,783 INFO --- Processing CRV/USDT ---
+2025-06-23 17:39:32,817 INFO CRV/USDT: Found 1 open BUY order(s)
+2025-06-23 17:39:32,851 INFO   ⚠️ Canceled Binance BUY order 67746399 @ 0.5261 qty=5.7
+2025-06-23 17:39:32,852 INFO   ➖ Deleted DB row for buy_order_id=67746399
+2025-06-23 17:39:33,055 INFO CRV/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:39:33,055 INFO Database connection closed.
+2025-06-23 17:40:22,259 INFO --- Processing ETH/USDT ---
+2025-06-23 17:40:22,277 INFO ETH/USDT: Found 0 open BUY order(s)
+2025-06-23 17:40:22,277 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:22,277 INFO --- Processing BTC/USDT ---
+2025-06-23 17:40:22,339 INFO BTC/USDT: Found 0 open BUY order(s)
+2025-06-23 17:40:22,339 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:22,339 INFO --- Processing DOGE/USDT ---
+2025-06-23 17:40:22,398 INFO DOGE/USDT: Found 0 open BUY order(s)
+2025-06-23 17:40:22,398 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:22,398 INFO --- Processing UNI/USDT ---
+2025-06-23 17:40:22,460 INFO UNI/USDT: Found 0 open BUY order(s)
+2025-06-23 17:40:22,460 INFO UNI/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:22,460 INFO --- Processing SOL/USDT ---
+2025-06-23 17:40:22,519 INFO SOL/USDT: Found 0 open BUY order(s)
+2025-06-23 17:40:22,519 INFO SOL/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:22,519 INFO --- Processing XRP/USDT ---
+2025-06-23 17:40:22,580 INFO XRP/USDT: Found 0 open BUY order(s)
+2025-06-23 17:40:22,580 INFO XRP/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:22,580 INFO --- Processing SHIB/USDT ---
+2025-06-23 17:40:22,640 INFO SHIB/USDT: Found 1 open BUY order(s)
+2025-06-23 17:40:22,657 INFO   ⚠️ Canceled Binance BUY order 307856214 @ 1.103e-05 qty=906618.0
+2025-06-23 17:40:22,658 INFO   ➖ Deleted DB row for buy_order_id=307856214
+2025-06-23 17:40:22,861 INFO SHIB/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:22,861 INFO --- Processing ADA/USDT ---
+2025-06-23 17:40:22,878 INFO ADA/USDT: Found 0 open BUY order(s)
+2025-06-23 17:40:22,878 INFO ADA/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:22,878 INFO --- Processing LINK/USDT ---
+2025-06-23 17:40:22,940 INFO LINK/USDT: Found 0 open BUY order(s)
+2025-06-23 17:40:22,940 INFO LINK/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:22,940 INFO --- Processing DOT/USDT ---
+2025-06-23 17:40:22,998 INFO DOT/USDT: Found 0 open BUY order(s)
+2025-06-23 17:40:22,999 INFO DOT/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:22,999 INFO --- Processing LTC/USDT ---
+2025-06-23 17:40:23,058 INFO LTC/USDT: Found 1 open BUY order(s)
+2025-06-23 17:40:23,079 INFO   ⚠️ Canceled Binance BUY order 338364894 @ 81.26 qty=0.123
+2025-06-23 17:40:23,079 INFO   ➖ Deleted DB row for buy_order_id=338364894
+2025-06-23 17:40:23,281 INFO LTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:23,281 INFO --- Processing AAVE/USDT ---
+2025-06-23 17:40:23,299 INFO AAVE/USDT: Found 0 open BUY order(s)
+2025-06-23 17:40:23,299 INFO AAVE/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:23,299 INFO --- Processing BNB/USDT ---
+2025-06-23 17:40:23,359 INFO BNB/USDT: Found 0 open BUY order(s)
+2025-06-23 17:40:23,359 INFO BNB/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:23,359 INFO --- Processing FET/USDT ---
+2025-06-23 17:40:23,419 INFO FET/USDT: Found 0 open BUY order(s)
+2025-06-23 17:40:23,419 INFO FET/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:23,419 INFO --- Processing OP/USDT ---
+2025-06-23 17:40:23,479 INFO OP/USDT: Found 0 open BUY order(s)
+2025-06-23 17:40:23,479 INFO OP/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:23,479 INFO --- Processing ARB/USDT ---
+2025-06-23 17:40:23,541 INFO ARB/USDT: Found 1 open BUY order(s)
+2025-06-23 17:40:23,560 INFO   ⚠️ Canceled Binance BUY order 79027972 @ 0.2768 qty=36.1
+2025-06-23 17:40:23,560 INFO   ➖ Deleted DB row for buy_order_id=79027972
+2025-06-23 17:40:23,763 INFO ARB/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:23,763 INFO --- Processing CRV/USDT ---
+2025-06-23 17:40:23,780 INFO CRV/USDT: Found 1 open BUY order(s)
+2025-06-23 17:40:23,798 INFO   ⚠️ Canceled Binance BUY order 67746814 @ 0.5261 qty=19.0
+2025-06-23 17:40:23,798 INFO   ➖ Deleted DB row for buy_order_id=67746814
+2025-06-23 17:40:24,000 INFO CRV/USDT: Cancellation and pruning complete.
+
+2025-06-23 17:40:24,001 INFO Database connection closed.
+2025-06-23 18:46:23,873 INFO --- Processing ETH/USDT ---
+2025-06-23 18:46:23,891 INFO ETH/USDT: Found 0 open BUY order(s)
+2025-06-23 18:46:23,891 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:23,891 INFO --- Processing BTC/USDT ---
+2025-06-23 18:46:23,952 INFO BTC/USDT: Found 1 open BUY order(s)
+2025-06-23 18:46:23,970 INFO   ⚠️ Canceled Binance BUY order 1500290849 @ 102602.07 qty=9e-05
+2025-06-23 18:46:23,970 INFO   ➖ Deleted DB row for buy_order_id=1500290849
+2025-06-23 18:46:24,175 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:24,176 INFO --- Processing DOGE/USDT ---
+2025-06-23 18:46:24,195 INFO DOGE/USDT: Found 1 open BUY order(s)
+2025-06-23 18:46:24,213 INFO   ⚠️ Canceled Binance BUY order 674848847 @ 0.1555 qty=64.0
+2025-06-23 18:46:24,213 INFO   ➖ Deleted DB row for buy_order_id=674848847
+2025-06-23 18:46:24,416 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:24,416 INFO --- Processing UNI/USDT ---
+2025-06-23 18:46:24,433 INFO UNI/USDT: Found 1 open BUY order(s)
+2025-06-23 18:46:24,451 INFO   ⚠️ Canceled Binance BUY order 215334104 @ 6.45 qty=1.55
+2025-06-23 18:46:24,451 INFO   ➖ Deleted DB row for buy_order_id=215334104
+2025-06-23 18:46:24,654 INFO UNI/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:24,654 INFO --- Processing SOL/USDT ---
+2025-06-23 18:46:24,671 INFO SOL/USDT: Found 1 open BUY order(s)
+2025-06-23 18:46:24,689 INFO   ⚠️ Canceled Binance BUY order 679683711 @ 137.65 qty=0.072
+2025-06-23 18:46:24,690 INFO   ➖ Deleted DB row for buy_order_id=679683711
+2025-06-23 18:46:24,892 INFO SOL/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:24,892 INFO --- Processing XRP/USDT ---
+2025-06-23 18:46:24,910 INFO XRP/USDT: Found 0 open BUY order(s)
+2025-06-23 18:46:24,910 INFO XRP/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:24,910 INFO --- Processing SHIB/USDT ---
+2025-06-23 18:46:24,969 INFO SHIB/USDT: Found 1 open BUY order(s)
+2025-06-23 18:46:24,986 INFO   ⚠️ Canceled Binance BUY order 307858541 @ 1.103e-05 qty=906618.0
+2025-06-23 18:46:24,987 INFO   ➖ Deleted DB row for buy_order_id=307858541
+2025-06-23 18:46:25,189 INFO SHIB/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:25,189 INFO --- Processing ADA/USDT ---
+2025-06-23 18:46:25,207 INFO ADA/USDT: Found 1 open BUY order(s)
+2025-06-23 18:46:25,225 INFO   ⚠️ Canceled Binance BUY order 516786103 @ 0.549 qty=18.2
+2025-06-23 18:46:25,225 INFO   ➖ Deleted DB row for buy_order_id=516786103
+2025-06-23 18:46:25,428 INFO ADA/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:25,428 INFO --- Processing LINK/USDT ---
+2025-06-23 18:46:25,446 INFO LINK/USDT: Found 0 open BUY order(s)
+2025-06-23 18:46:25,446 INFO LINK/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:25,446 INFO --- Processing DOT/USDT ---
+2025-06-23 18:46:25,507 INFO DOT/USDT: Found 1 open BUY order(s)
+2025-06-23 18:46:25,524 INFO   ⚠️ Canceled Binance BUY order 127378918 @ 3.246 qty=3.08
+2025-06-23 18:46:25,524 INFO   ➖ Deleted DB row for buy_order_id=127378918
+2025-06-23 18:46:25,727 INFO DOT/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:25,727 INFO --- Processing LTC/USDT ---
+2025-06-23 18:46:25,744 INFO LTC/USDT: Found 1 open BUY order(s)
+2025-06-23 18:46:25,761 INFO   ⚠️ Canceled Binance BUY order 338364935 @ 81.26 qty=0.123
+2025-06-23 18:46:25,761 INFO   ➖ Deleted DB row for buy_order_id=338364935
+2025-06-23 18:46:25,967 INFO LTC/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:25,967 INFO --- Processing AAVE/USDT ---
+2025-06-23 18:46:25,985 INFO AAVE/USDT: Found 1 open BUY order(s)
+2025-06-23 18:46:26,002 INFO   ⚠️ Canceled Binance BUY order 111299552 @ 234.51 qty=0.042
+2025-06-23 18:46:26,003 INFO   ➖ Deleted DB row for buy_order_id=111299552
+2025-06-23 18:46:26,205 INFO AAVE/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:26,206 INFO --- Processing BNB/USDT ---
+2025-06-23 18:46:26,223 INFO BNB/USDT: Found 1 open BUY order(s)
+2025-06-23 18:46:26,240 INFO   ⚠️ Canceled Binance BUY order 532821430 @ 627.47 qty=0.015
+2025-06-23 18:46:26,241 INFO   ➖ Deleted DB row for buy_order_id=532821430
+2025-06-23 18:46:26,443 INFO BNB/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:26,444 INFO --- Processing FET/USDT ---
+2025-06-23 18:46:26,462 INFO FET/USDT: Found 0 open BUY order(s)
+2025-06-23 18:46:26,462 INFO FET/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:26,462 INFO --- Processing OP/USDT ---
+2025-06-23 18:46:26,522 INFO OP/USDT: Found 1 open BUY order(s)
+2025-06-23 18:46:26,540 INFO   ⚠️ Canceled Binance BUY order 109695409 @ 0.513 qty=19.49
+2025-06-23 18:46:26,541 INFO   ➖ Deleted DB row for buy_order_id=109695409
+2025-06-23 18:46:26,744 INFO OP/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:26,744 INFO --- Processing ARB/USDT ---
+2025-06-23 18:46:26,762 INFO ARB/USDT: Found 1 open BUY order(s)
+2025-06-23 18:46:26,781 INFO   ⚠️ Canceled Binance BUY order 79029335 @ 0.2768 qty=36.1
+2025-06-23 18:46:26,781 INFO   ➖ Deleted DB row for buy_order_id=79029335
+2025-06-23 18:46:26,984 INFO ARB/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:26,984 INFO --- Processing CRV/USDT ---
+2025-06-23 18:46:27,002 INFO CRV/USDT: Found 1 open BUY order(s)
+2025-06-23 18:46:27,020 INFO   ⚠️ Canceled Binance BUY order 67748070 @ 0.5422 qty=18.4
+2025-06-23 18:46:27,020 INFO   ➖ Deleted DB row for buy_order_id=67748070
+2025-06-23 18:46:27,223 INFO CRV/USDT: Cancellation and pruning complete.
+
+2025-06-23 18:46:27,223 INFO Database connection closed.
+2025-06-24 06:54:57,466 INFO --- Processing ETH/USDT ---
+2025-06-24 06:54:57,484 INFO ETH/USDT: Found 1 open BUY order(s)
+2025-06-24 06:54:57,502 INFO   ⚠️ Canceled Binance BUY order 1248013596 @ 2426.61 qty=0.0164
+2025-06-24 06:54:57,502 INFO   ➖ Deleted DB row for buy_order_id=1248013596
+2025-06-24 06:54:57,706 INFO ETH/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:57,706 INFO --- Processing BTC/USDT ---
+2025-06-24 06:54:57,723 INFO BTC/USDT: Found 0 open BUY order(s)
+2025-06-24 06:54:57,723 INFO BTC/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:57,723 INFO --- Processing DOGE/USDT ---
+2025-06-24 06:54:57,783 INFO DOGE/USDT: Found 1 open BUY order(s)
+2025-06-24 06:54:57,800 INFO   ⚠️ Canceled Binance BUY order 675015095 @ 0.1667 qty=59.0
+2025-06-24 06:54:57,800 INFO   ➖ Deleted DB row for buy_order_id=675015095
+2025-06-24 06:54:58,002 INFO DOGE/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:58,003 INFO --- Processing UNI/USDT ---
+2025-06-24 06:54:58,020 INFO UNI/USDT: Found 1 open BUY order(s)
+2025-06-24 06:54:58,038 INFO   ⚠️ Canceled Binance BUY order 215646196 @ 6.91 qty=5.78
+2025-06-24 06:54:58,039 INFO   ➖ Deleted DB row for buy_order_id=215646196
+2025-06-24 06:54:58,241 INFO UNI/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:58,241 INFO --- Processing SOL/USDT ---
+2025-06-24 06:54:58,259 INFO SOL/USDT: Found 0 open BUY order(s)
+2025-06-24 06:54:58,259 INFO SOL/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:58,259 INFO --- Processing XRP/USDT ---
+2025-06-24 06:54:58,320 INFO XRP/USDT: Found 0 open BUY order(s)
+2025-06-24 06:54:58,320 INFO XRP/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:58,320 INFO --- Processing SHIB/USDT ---
+2025-06-24 06:54:58,379 INFO SHIB/USDT: Found 1 open BUY order(s)
+2025-06-24 06:54:58,396 INFO   ⚠️ Canceled Binance BUY order 307897754 @ 1.183e-05 qty=845308.0
+2025-06-24 06:54:58,397 INFO   ➖ Deleted DB row for buy_order_id=307897754
+2025-06-24 06:54:58,599 INFO SHIB/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:58,600 INFO --- Processing ADA/USDT ---
+2025-06-24 06:54:58,617 INFO ADA/USDT: Found 0 open BUY order(s)
+2025-06-24 06:54:58,617 INFO ADA/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:58,617 INFO --- Processing LINK/USDT ---
+2025-06-24 06:54:58,677 INFO LINK/USDT: Found 0 open BUY order(s)
+2025-06-24 06:54:58,677 INFO LINK/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:58,677 INFO --- Processing DOT/USDT ---
+2025-06-24 06:54:58,738 INFO DOT/USDT: Found 0 open BUY order(s)
+2025-06-24 06:54:58,738 INFO DOT/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:58,738 INFO --- Processing LTC/USDT ---
+2025-06-24 06:54:58,798 INFO LTC/USDT: Found 0 open BUY order(s)
+2025-06-24 06:54:58,798 INFO LTC/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:58,798 INFO --- Processing AAVE/USDT ---
+2025-06-24 06:54:58,857 INFO AAVE/USDT: Found 0 open BUY order(s)
+2025-06-24 06:54:58,857 INFO AAVE/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:58,857 INFO --- Processing BNB/USDT ---
+2025-06-24 06:54:58,918 INFO BNB/USDT: Found 0 open BUY order(s)
+2025-06-24 06:54:58,918 INFO BNB/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:58,918 INFO --- Processing FET/USDT ---
+2025-06-24 06:54:58,978 INFO FET/USDT: Found 0 open BUY order(s)
+2025-06-24 06:54:58,979 INFO FET/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:58,979 INFO --- Processing OP/USDT ---
+2025-06-24 06:54:59,038 INFO OP/USDT: Found 1 open BUY order(s)
+2025-06-24 06:54:59,056 INFO   ⚠️ Canceled Binance BUY order 109712132 @ 0.561 qty=17.82
+2025-06-24 06:54:59,056 INFO   ➖ Deleted DB row for buy_order_id=109712132
+2025-06-24 06:54:59,259 INFO OP/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:59,259 INFO --- Processing ARB/USDT ---
+2025-06-24 06:54:59,276 INFO ARB/USDT: Found 0 open BUY order(s)
+2025-06-24 06:54:59,276 INFO ARB/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:59,276 INFO --- Processing CRV/USDT ---
+2025-06-24 06:54:59,336 INFO CRV/USDT: Found 1 open BUY order(s)
+2025-06-24 06:54:59,356 INFO   ⚠️ Canceled Binance BUY order 67771435 @ 0.5813 qty=17.2
+2025-06-24 06:54:59,356 INFO   ➖ Deleted DB row for buy_order_id=67771435
+2025-06-24 06:54:59,559 INFO CRV/USDT: Cancellation and pruning complete.
+
+2025-06-24 06:54:59,559 INFO Database connection closed.
