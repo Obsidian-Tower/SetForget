@@ -364,8 +364,8 @@ def set_band_close(sym, cfg):
             log.info(f"{sym} ❌ No valid buy bands under current price.")
             return
 
-        next_band = valid_bands[0]  # closest band under price
-        next_buy, next_sell = next_band
+        next_buy, next_sell = valid_bands[0]
+        log.info(f"{sym} 🎯 Closest eligible band: buy@{next_buy} → sell@{next_sell}")
 
         # Fetch all 'waiting' orders for this symbol
         cur = DB.execute("""
@@ -375,6 +375,7 @@ def set_band_close(sym, cfg):
         rows = cur.fetchall()
         cols = [c[0] for c in cur.description]
 
+        # Cancel all stale 'waiting' orders BELOW the closest band
         stale_orders = [
             dict(zip(cols, row)) for row in rows
             if row[cols.index("buy_price")] < next_buy
@@ -386,23 +387,34 @@ def set_band_close(sym, cfg):
                 log.info(f"{sym} ❎ Canceled stale buy order {r['buy_order_id']} @ {r['buy_price']}")
             except Exception as e:
                 log.warning(f"{sym} ⚠️ Failed to cancel {r['buy_order_id']}: {e}")
-
             DB.execute("DELETE FROM grid_pairs WHERE rowid = ?", (r["rowid"],))
         DB.commit()
 
-        if stale_orders:
-            raw_qty = cfg["usd_per_order"] / next_buy
-            qty     = float(exchange.amount_to_precision(sym, raw_qty))
-            log.info(
-                f"{sym} ➕ Placing replacement buy: qty={qty:.8f} "
-                f"@ buy@{next_buy:.8f} / sell@{next_sell:.8f}"
-            )
-            submit_buy_pair(sym, next_buy, next_sell, qty)
-        else:
-            log.info(f"{sym} ✅ No stale bands below {next_buy:.8f}. No action needed.")
+        # 🔍 Check if next_buy already exists with an INCOMPLETE status
+        cur = DB.execute("""
+            SELECT COUNT(*) FROM grid_pairs
+             WHERE symbol = ?
+               AND buy_price = ?
+               AND status != 'completed'
+        """, (sym, next_buy))
+        count = cur.fetchone()[0]
+
+        if count > 0:
+            log.info(f"{sym} 🚫 Band {next_buy} already has an active or pending buy. Skipping new order.")
+            return
+
+        # ✅ Safe to place a new buy
+        raw_qty = cfg["usd_per_order"] / next_buy
+        qty     = float(exchange.amount_to_precision(sym, raw_qty))
+        log.info(
+            f"{sym} ➕ Placing replacement buy: qty={qty:.8f} "
+            f"@ buy@{next_buy:.8f} / sell@{next_sell:.8f}"
+        )
+        submit_buy_pair(sym, next_buy, next_sell, qty)
 
     except Exception as e:
         log.error(f"{sym} ❌ set_band_close failed: {e}")
+
 
 # ─── MAIN EXECUTION ────────────────────────────────────────────────────────────
 if __name__ == "__main__":
