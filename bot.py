@@ -414,12 +414,25 @@ def set_band_close(sym, cfg):
 
     except Exception as e:
         log.error(f"{sym} ❌ set_band_close failed: {e}")
+def update_config_with_dynamic_usdt(CONFIG, exchange, percent=0.04):
+    try:
+        balance_info = exchange.fetch_balance()
+        usdt_balance = balance_info["USDT"]["free"]
+        dynamic_usd = round(usdt_balance * percent, 4)
+        log.info(f"💰 Available USDT: {usdt_balance:.4f}, 4% per order: {dynamic_usd:.4f}")
+
+        for sym in CONFIG:
+            CONFIG[sym]["usd_per_order"] = dynamic_usd
+
+    except Exception as e:
+        log.error(f"❌ Failed to fetch balance or update config: {e}")
 
 
 # ─── MAIN EXECUTION ────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     log.info("=== GridBot Multi-Symbol Run STARTED ===")
     try:
+        update_config_with_dynamic_usdt(CONFIG, exchange, percent=0.02)
         for sym, cfg in CONFIG.items():
             if sym not in markets:
                 log.warning(f"Skipping {sym}: not on exchange")
@@ -429,6 +442,7 @@ if __name__ == "__main__":
             retry_failed_sells_for_symbol(sym)
             seed_grid_for_symbol(sym, cfg)
             set_band_close(sym, cfg)
+
     except Exception as e:
         log.error(f"ERROR DURING RUN: {e}")
     finally:
