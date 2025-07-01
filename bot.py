@@ -187,7 +187,7 @@ def check_fills_for_symbol(sym, cfg):
 
     open_ids = {o["id"] for o in open_orders}
     cur = DB.execute("""
-        SELECT rowid, * FROM grid_pairs
+        SELECT id, * FROM grid_pairs
          WHERE symbol=? AND status IN ('waiting','holding')
     """, (sym,))
     rows = cur.fetchall()
@@ -231,7 +231,7 @@ def check_fills_for_symbol(sym, cfg):
                        buy_fees_data=?,
                        buy_net_real=?,
                        status='ready_to_sell'
-                 WHERE rowid=?
+                 WHERE id=?
             """, (
                 datetime.utcnow(),
                 price_exec,
@@ -241,7 +241,7 @@ def check_fills_for_symbol(sym, cfg):
                 fees_count,
                 fees_json,
                 net,
-                r["rowid"]
+                r["id"]
             ))
             DB.commit()
 
@@ -286,7 +286,7 @@ def check_fills_for_symbol(sym, cfg):
                        sell_fees_data=?,
                        sell_net_real=?,
                        status='completed'
-                 WHERE rowid=?
+                 WHERE id=?
             """, (
                 datetime.utcnow(),
                 price_exec,
@@ -296,7 +296,7 @@ def check_fills_for_symbol(sym, cfg):
                 fees_count,
                 fees_json,
                 net,
-                r["rowid"]
+                r["id"]
             ))
             DB.commit()
 
@@ -379,7 +379,7 @@ def retry_failed_sells_for_symbol(sym):
         return
 
     cur = DB.execute("""
-        SELECT rowid, * FROM grid_pairs
+        SELECT id, * FROM grid_pairs
          WHERE symbol=? AND status='ready_to_sell'
     """, (sym,))
     rows = cur.fetchall()
@@ -387,7 +387,6 @@ def retry_failed_sells_for_symbol(sym):
 
     for row in rows:
         r = dict(zip(cols, row))
-        rowid = r["rowid"]
         sell_price = r["sell_price"]
         existing_sell_id = r.get("sell_order_id")
 
@@ -437,7 +436,7 @@ def retry_failed_sells_for_symbol(sym):
                            sell_fees_data=?,
                            sell_raw_json=?,
                            status='completed'
-                     WHERE rowid=?
+                     WHERE id=?
                 """, (
                     o["id"],
                     datetime.utcnow(),
@@ -450,7 +449,7 @@ def retry_failed_sells_for_symbol(sym):
                     fee_count,
                     fees_json,
                     json.dumps(o),
-                    rowid
+                    r["id"]
                 ))
                 DB.commit()
                 log.info(f"🏁 {sym} MARKET SELL COMPLETE: qty={amount} sell@{current_price:.8f}")
