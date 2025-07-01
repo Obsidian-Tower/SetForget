@@ -22,13 +22,15 @@ df = pd.read_sql_query(
            buy_order_filled,
            buy_cost,
            buy_price,
+           sell_order_submitted,
            sell_price,
            sell_cost,
            status
       FROM grid_pairs
+     WHERE status != 'completed'
     """,
     conn,
-    parse_dates=["buy_order_submitted", "buy_order_filled"]
+    parse_dates=["buy_order_submitted", "buy_order_filled", "sell_order_submitted"]
 )
 
 # Close DB connection
