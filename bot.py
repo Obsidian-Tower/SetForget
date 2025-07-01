@@ -98,7 +98,6 @@ CREATE TABLE IF NOT EXISTS grid_pairs (
 """)
 
 DB.commit()
-DB.close()
 
 # ─── HELPERS ───────────────────────────────────────────────────────────────────
 
