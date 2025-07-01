@@ -314,7 +314,7 @@ def seed_grid_for_symbol(sym, cfg):
     log.info(f"{sym} ⇒ Current price: {price:.8f}")
 
     usd       = cfg["usd_per_order"]
-    bands     = cfg["bands"]
+    bands     = 1
     all_pairs = load_price_grid("grids/" + cfg["grid_file"])
 
     # 2) Eligible buy/sell pairs below current price
