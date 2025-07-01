@@ -22,23 +22,23 @@ API_SECRET = os.getenv("BINANCE_API_SECRET")
 
 # ─── CONFIG ─────────────────────────────────────────────────────────────────────
 CONFIG = {
-    "ETH/USDT": {"grid_file":"ETH-USDT-06.csv","usd_per_order":10,"bands":1},
-    "BTC/USDT": {"grid_file":"BTC-USDT-05.csv","usd_per_order":10,"bands":1},
-    "DOGE/USDT":{"grid_file":"DOGE-USDT-10.csv","usd_per_order":10,"bands":1},
-    "UNI/USDT": {"grid_file":"UNI-USDT-10.csv","usd_per_order":10,"bands":1},
-    "SOL/USDT": {"grid_file":"SOL-USDT-10.csv","usd_per_order":10,"bands":1},
-    "XRP/USDT": {"grid_file":"XRP-USDT-10.csv","usd_per_order":10,"bands":1},
-    "SHIB/USDT":{"grid_file":"SHIB-USDT-10.csv","usd_per_order":10,"bands":1},
-    "ADA/USDT":{"grid_file":"ADA-USDT-06.csv","usd_per_order":10,"bands":1},
-    "LINK/USDT":{"grid_file":"LINK-USDT-10.csv","usd_per_order":10,"bands":1},
-    "DOT/USDT":{"grid_file":"DOT-USDT-11.csv","usd_per_order":10,"bands":1},
-    "LTC/USDT":{"grid_file":"LTC-USDT-08.csv","usd_per_order":10,"bands":1},
-    "AAVE/USDT": {"grid_file":"AAVE-USDT-12.csv","usd_per_order":10,"bands":1},
-    "BNB/USDT": {"grid_file":"BNB-USDT-04.csv","usd_per_order":10,"bands":1},
-    "FET/USDT": {"grid_file":"FET-USDT-10.csv","usd_per_order":10,"bands":1},
-    "OP/USDT": {"grid_file":"OP-USDT-10.csv","usd_per_order":10,"bands":1},
-    "ARB/USDT": {"grid_file":"ARB-USDT-06.csv","usd_per_order":10,"bands":1},
-    "CRV/USDT": {"grid_file":"CRV-USDT-10.csv","usd_per_order":10,"bands":1},
+    "ETH/USDT": {"grid_file": "ETH-USDT-06.csv"},
+    "BTC/USDT": {"grid_file": "BTC-USDT-05.csv"},
+    "DOGE/USDT": {"grid_file": "DOGE-USDT-10.csv"},
+    "UNI/USDT": {"grid_file": "UNI-USDT-10.csv"},
+    "SOL/USDT": {"grid_file": "SOL-USDT-10.csv"},
+    "XRP/USDT": {"grid_file": "XRP-USDT-10.csv"},
+    "SHIB/USDT": {"grid_file": "SHIB-USDT-10.csv"},
+    "ADA/USDT": {"grid_file": "ADA-USDT-06.csv"},
+    "LINK/USDT": {"grid_file": "LINK-USDT-10.csv"},
+    "DOT/USDT": {"grid_file": "DOT-USDT-11.csv"},
+    "LTC/USDT": {"grid_file": "LTC-USDT-08.csv"},
+    "AAVE/USDT": {"grid_file": "AAVE-USDT-12.csv"},
+    "BNB/USDT": {"grid_file": "BNB-USDT-04.csv"},
+    "FET/USDT": {"grid_file": "FET-USDT-10.csv"},
+    "OP/USDT": {"grid_file": "OP-USDT-10.csv"},
+    "ARB/USDT": {"grid_file": "ARB-USDT-06.csv"},
+    "CRV/USDT": {"grid_file": "CRV-USDT-10.csv"},
 }
 
 # ─── LOGGING ───────────────────────────────────────────────────────────────────
@@ -64,30 +64,44 @@ markets = exchange.load_markets()
 DB = sqlite3.connect("gridbot_pairs.sqlite3", check_same_thread=False)
 DB.execute("""
 CREATE TABLE IF NOT EXISTS grid_pairs (
-    symbol                    TEXT,
-    buy_price                 REAL,
-    sell_price                REAL,
-    qty                       REAL,
-    buy_order_id              TEXT,
-    buy_submitted             TIMESTAMP,
-    buy_filled                TIMESTAMP,
-    buy_exchange_price        REAL,
-    buy_maker_fee             REAL,
-    buy_maker_fee_currency    TEXT,
-    buy_net_real              REAL,
-    sell_order_id             TEXT,
-    sell_submitted            TIMESTAMP,
-    sell_filled               TIMESTAMP,
-    sell_exchange_price       REAL,
-    sell_maker_fee            REAL,
-    sell_maker_fee_currency   TEXT,
-    sell_net_real             REAL,
-    status                    TEXT
+    id                      INTEGER PRIMARY KEY AUTOINCREMENT,
+    symbol                  TEXT NOT NULL,
+
+    buy_trade_id            TEXT,
+    buy_order_id            TEXT,
+    buy_order_submitted     TIMESTAMP,
+    buy_order_filled        TIMESTAMP,
+    buy_amount              REAL,
+    buy_price               REAL,
+    buy_cost                REAL,
+    buy_fee_cost            REAL,
+    buy_fee_currency        TEXT,
+    buy_fees                INTEGER,
+    buy_fees_data           TEXT,
+
+    sell_trade_id           TEXT,
+    sell_order_id           TEXT,
+    sell_order_submitted    TIMESTAMP,
+    sell_order_filled       TIMESTAMP,
+    sell_amount             REAL,
+    sell_price              REAL,
+    sell_cost               REAL,
+    sell_fee_cost           REAL,
+    sell_fee_currency       TEXT,
+    sell_fees               INTEGER,
+    sell_fees_data          TEXT,
+
+    buy_raw_json            TEXT,
+    sell_raw_json           TEXT,
+    status                  TEXT
 )
 """)
+
 DB.commit()
+DB.close()
 
 # ─── HELPERS ───────────────────────────────────────────────────────────────────
+
 def load_price_grid(path):
     with open(path, newline="") as f:
         prices = sorted(float(line.strip()) for line in f if line.strip())
@@ -96,37 +110,70 @@ def load_price_grid(path):
 def get_price(sym):
     return float(exchange.fetch_ticker(sym)["last"])
 
+#updated needs test
 def submit_buy_pair(sym, buy_price, sell_price, qty):
     log.info(f"▶️ ATTEMPT BUY {sym}: qty={qty} @ buy@{buy_price}")
     o = exchange.create_limit_buy_order(sym, qty, buy_price)
+
     DB.execute("""
-        INSERT INTO grid_pairs(
-           symbol, buy_price, sell_price, qty,
-           buy_order_id, buy_submitted, status
-        ) VALUES (?, ?, ?, ?, ?, ?, 'waiting')
-    """, (sym, buy_price, sell_price, qty, o["id"], datetime.utcnow()))
+        INSERT INTO grid_pairs (
+            symbol,
+            buy_order_id,
+            buy_order_submitted,
+            buy_price,
+            buy_amount,
+            buy_cost,
+            buy_raw_json,
+            status,
+            sell_price
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, (
+        sym,
+        o["id"],
+        datetime.now(timezone.utc),
+        float(o["price"]),
+        float(o["amount"]),
+        float(o["cost"]),
+        json.dumps(o),
+        'waiting',
+        sell_price
+    ))
     DB.commit()
+
     log.info(
         f"✅ BUY PLACED {sym}: qty={qty} "
-        f"$~{round(qty*buy_price,2)} buy@{buy_price} (id={o['id']})"
+        f"$~{round(qty * buy_price, 2)} buy@{buy_price} (id={o['id']})"
     )
 
+#updated needs test
 def submit_sell_pair(sym, r, qty):
     sell_price = r["sell_price"]
     log.info(f"▶️ ATTEMPT SELL {sym}: qty={qty} @ sell@{sell_price}")
     o = exchange.create_limit_sell_order(sym, qty, sell_price)
+
     DB.execute("""
         UPDATE grid_pairs
-           SET sell_order_id=?, sell_submitted=?, status='holding'
-         WHERE buy_order_id=?
-    """, (o["id"], datetime.utcnow(), r["buy_order_id"]))
+           SET sell_order_id = ?,
+               sell_order_submitted = ?,
+               status = 'holding',
+               sell_price = ?
+         WHERE buy_order_id = ?
+    """, (
+        o["id"],
+        datetime.now(timezone.utc),
+        float(o["price"]),
+        r["buy_order_id"]
+    ))
     DB.commit()
+
     log.info(
         f"✅ SELL PLACED {sym}: qty={qty} "
-        f"$~{round(qty*sell_price,2)} sell@{sell_price} (id={o['id']})"
+        f"$~{round(qty * sell_price, 2)} sell@{sell_price} (id={o['id']})"
     )
 
+#updated needs test
 def check_fills_for_symbol(sym, cfg):
+    import json
     # --- log current open orders ---
     open_orders = exchange.fetch_open_orders(sym)
     if open_orders:
@@ -151,32 +198,47 @@ def check_fills_for_symbol(sym, cfg):
 
         # BUY filled?
         if r["status"] == "waiting" and r["buy_order_id"] not in open_ids:
-            order       = exchange.fetch_order(r["buy_order_id"], sym)
+            order = exchange.fetch_order(r["buy_order_id"], sym)
             if not order:
                 log.error(f"{sym} ⚠️ missing buy order {r['buy_order_id']}")
                 continue
 
-            filled      = float(order["filled"])
-            fee_obj     = order.get("fee") or {}
-            fee_cost    = fee_obj.get("cost", 0.0)
-            fee_currency= fee_obj.get("currency", "")
-            net         = filled - fee_cost
-            price_exec  = (order["cost"] / filled) if filled else r["buy_price"]
+            filled = float(order["filled"])
+            price_exec = (order["cost"] / filled) if filled else r["buy_price"]
+            cost = order["cost"]
+
+            # Pull trade info
+            trades = exchange.fetch_my_trades(symbol=sym, params={"order": r["buy_order_id"]})
+            trade = trades[0] if trades else {}
+            fee = trade.get("fee", {})
+            fee_cost = fee.get("cost", 0.0)
+            fee_currency = fee.get("currency", "")
+            fees_list = trade.get("fees", [])
+            fees_count = len(fees_list)
+            fees_json = json.dumps(fees_list)
+
+            net = filled - fee_cost
 
             DB.execute("""
                 UPDATE grid_pairs
                    SET buy_filled=?,
                        buy_exchange_price=?,
-                       buy_maker_fee=?,
-                       buy_maker_fee_currency=?,
+                       buy_cost=?,
+                       buy_fee_cost=?,
+                       buy_fee_currency=?,
+                       buy_fees=?,
+                       buy_fees_data=?,
                        buy_net_real=?,
                        status='ready_to_sell'
                  WHERE rowid=?
             """, (
                 datetime.utcnow(),
                 price_exec,
+                cost,
                 fee_cost,
                 fee_currency,
+                fees_count,
+                fees_json,
                 net,
                 r["rowid"]
             ))
@@ -190,32 +252,47 @@ def check_fills_for_symbol(sym, cfg):
 
         # SELL filled?
         elif r["status"] == "holding" and r["sell_order_id"] not in open_ids:
-            order       = exchange.fetch_order(r["sell_order_id"], sym)
+            order = exchange.fetch_order(r["sell_order_id"], sym)
             if not order:
                 log.error(f"{sym} ⚠️ missing sell order {r['sell_order_id']}")
                 continue
 
-            filled      = float(order["filled"])
-            fee_obj     = order.get("fee") or {}
-            fee_cost    = fee_obj.get("cost", 0.0)
-            fee_currency= fee_obj.get("currency", "")
-            net         = filled - fee_cost
-            price_exec  = (order["cost"] / filled) if filled else r["sell_price"]
+            filled = float(order["filled"])
+            price_exec = (order["cost"] / filled) if filled else r["sell_price"]
+            cost = order["cost"]
+
+            # Pull trade info
+            trades = exchange.fetch_my_trades(symbol=sym, params={"order": r["sell_order_id"]})
+            trade = trades[0] if trades else {}
+            fee = trade.get("fee", {})
+            fee_cost = fee.get("cost", 0.0)
+            fee_currency = fee.get("currency", "")
+            fees_list = trade.get("fees", [])
+            fees_count = len(fees_list)
+            fees_json = json.dumps(fees_list)
+
+            net = filled - fee_cost
 
             DB.execute("""
                 UPDATE grid_pairs
                    SET sell_filled=?,
                        sell_exchange_price=?,
-                       sell_maker_fee=?,
-                       sell_maker_fee_currency=?,
+                       sell_cost=?,
+                       sell_fee_cost=?,
+                       sell_fee_currency=?,
+                       sell_fees=?,
+                       sell_fees_data=?,
                        sell_net_real=?,
                        status='completed'
                  WHERE rowid=?
             """, (
                 datetime.utcnow(),
                 price_exec,
+                cost,
                 fee_cost,
                 fee_currency,
+                fees_count,
+                fees_json,
                 net,
                 r["rowid"]
             ))
@@ -227,20 +304,23 @@ def check_fills_for_symbol(sym, cfg):
             )
             log.info(f"🏁 {sym} PAIR DONE: buy@{r['buy_price']} → sell@{r['sell_price']}")
 
+#updated needs test
 def seed_grid_for_symbol(sym, cfg):
-    # 1) get current price and log it
-    price     = get_price(sym)
+    import time
+
+    # 1) Get current price
+    price = get_price(sym)
     log.info(f"{sym} ⇒ Current price: {price:.8f}")
 
     usd       = cfg["usd_per_order"]
     bands     = cfg["bands"]
-    all_pairs = load_price_grid("grids/"+cfg["grid_file"])
+    all_pairs = load_price_grid("grids/" + cfg["grid_file"])
 
-    # 2) eligible bands under current price
+    # 2) Eligible buy/sell pairs below current price
     eligible = [(b, s) for b, s in all_pairs if b < price]
     eligible.sort(key=lambda x: x[0], reverse=True)
 
-    # 3) fetch and count all active bands (waiting, ready_to_sell, holding) under price
+    # 3) Count existing active bands under current price
     cur = DB.execute("""
         SELECT buy_price FROM grid_pairs
          WHERE symbol=?
@@ -251,13 +331,13 @@ def seed_grid_for_symbol(sym, cfg):
     active_count = len(active_under)
     log.info(f"{sym} ⇒ Active bands under price: {active_count}/{bands}")
 
-    # 4) how many new buys are needed?
+    # 4) Determine how many new buys are needed
     needed = bands - active_count
     if needed <= 0:
         log.info(f"{sym} ➡️ No new buys needed.")
         return
 
-    # 5) seed next `needed` buys
+    # 5) Submit new buys for next needed bands
     seeded = 0
     for buy_price, sell_price in eligible:
         if seeded >= needed:
@@ -265,21 +345,29 @@ def seed_grid_for_symbol(sym, cfg):
         if buy_price in active_under:
             continue
 
+        # Calculate qty with precision handling
         raw_qty = usd / buy_price
-        qty     = float(exchange.amount_to_precision(sym, raw_qty))
+        qty = float(exchange.amount_to_precision(sym, raw_qty))
+
         log.info(
             f"{sym} Seeding band: qty={qty:.8f} "
             f"@ buy@{buy_price:.8f} / sell@{sell_price:.8f}"
         )
+
+        # Submit order (submit_buy_pair must conform to new schema expectations)
         submit_buy_pair(sym, buy_price, sell_price, qty)
         seeded += 1
         time.sleep(1)
 
     log.info(
         f"{sym} ➡️ Seeded {seeded} new buy(s); "
-        f"now {active_count+seeded}/{bands} active bands."
+        f"now {active_count + seeded}/{bands} active bands."
     )
+
+#updated needs test
 def retry_failed_sells_for_symbol(sym):
+    import json
+
     log.info(f"{sym} 🔁 Checking for stranded 'ready_to_sell' rows...")
     try:
         open_orders = exchange.fetch_open_orders(sym)
@@ -298,7 +386,6 @@ def retry_failed_sells_for_symbol(sym):
     for row in rows:
         r = dict(zip(cols, row))
         rowid = r["rowid"]
-        buy_net = r["buy_net_real"]
         sell_price = r["sell_price"]
         existing_sell_id = r.get("sell_order_id")
 
@@ -319,39 +406,63 @@ def retry_failed_sells_for_symbol(sym):
         if current_price >= sell_price:
             log.info(f"{sym} ⏫ Price above target, selling immediately at market price!")
             try:
-                o = exchange.create_market_sell_order(sym, buy_net)
+                o = exchange.create_market_sell_order(sym, r["buy_amount"])  # temporary qty guess
+
+                # Fetch trade by order ID
+                trades = exchange.fetch_my_trades(symbol=sym, params={"order": o["id"]})
+                trade = trades[0] if trades else {}
+                amount = trade.get("amount", 0.0)
+
+                fee = trade.get("fee", {}) or {}
+                fee_cost = fee.get("cost", 0.0)
+                fee_currency = fee.get("currency", "")
+                fees = trade.get("fees", [])
+                fee_count = len(fees)
+                fees_json = json.dumps(fees)
+                cost = trade.get("cost", current_price * amount)
+
                 DB.execute("""
                     UPDATE grid_pairs
                        SET sell_order_id=?,
-                           sell_submitted=?,
-                           sell_filled=?,
-                           sell_exchange_price=?,
-                           sell_maker_fee=?,
-                           sell_maker_fee_currency=?,
-                           sell_net_real=?,
+                           sell_order_submitted=?,
+                           sell_order_filled=?,
+                           sell_amount=?,
+                           sell_price=?,
+                           sell_cost=?,
+                           sell_fee_cost=?,
+                           sell_fee_currency=?,
+                           sell_fees=?,
+                           sell_fees_data=?,
+                           sell_raw_json=?,
                            status='completed'
                      WHERE rowid=?
                 """, (
                     o["id"],
                     datetime.utcnow(),
                     datetime.utcnow(),
+                    amount,
                     current_price,
-                    o.get("fee", {}).get("cost", 0.0),
-                    o.get("fee", {}).get("currency", ""),
-                    buy_net - o.get("fee", {}).get("cost", 0.0),
+                    cost,
+                    fee_cost,
+                    fee_currency,
+                    fee_count,
+                    fees_json,
+                    json.dumps(o),
                     rowid
                 ))
                 DB.commit()
-                log.info(f"🏁 {sym} MARKET SELL COMPLETE: qty={buy_net} sell@{current_price:.8f}")
+                log.info(f"🏁 {sym} MARKET SELL COMPLETE: qty={amount} sell@{current_price:.8f}")
             except Exception as e:
                 log.error(f"{sym} ❌ Market sell failed: {e}")
         else:
             # Re-attempt limit sell
             log.warning(f"{sym} 🛑 Sell order missing, retrying limit sell...")
             try:
-                submit_sell_pair(sym, r, buy_net)
+                submit_sell_pair(sym, r, r["buy_amount"])
             except Exception as e:
                 log.error(f"{sym} ❌ Retry limit sell failed: {e}")
+
+#updated needs test
 def set_band_close(sym, cfg):
     try:
         price = get_price(sym)
@@ -369,33 +480,28 @@ def set_band_close(sym, cfg):
 
         # Fetch all 'waiting' orders for this symbol
         cur = DB.execute("""
-            SELECT rowid, * FROM grid_pairs
+            SELECT id, buy_order_id, buy_price FROM grid_pairs
              WHERE symbol = ? AND status = 'waiting'
         """, (sym,))
         rows = cur.fetchall()
-        cols = [c[0] for c in cur.description]
 
         # Cancel all stale 'waiting' orders BELOW the closest band
-        stale_orders = [
-            dict(zip(cols, row)) for row in rows
-            if row[cols.index("buy_price")] < next_buy
-        ]
+        stale_orders = [row for row in rows if row[2] < next_buy]
 
-        for r in stale_orders:
+        for row in stale_orders:
+            row_id, order_id, buy_price = row
             try:
-                exchange.cancel_order(r["buy_order_id"], sym)
-                log.info(f"{sym} ❎ Canceled stale buy order {r['buy_order_id']} @ {r['buy_price']}")
+                exchange.cancel_order(order_id, sym)
+                log.info(f"{sym} ❎ Canceled stale buy order {order_id} @ {buy_price}")
             except Exception as e:
-                log.warning(f"{sym} ⚠️ Failed to cancel {r['buy_order_id']}: {e}")
-            DB.execute("DELETE FROM grid_pairs WHERE rowid = ?", (r["rowid"],))
+                log.warning(f"{sym} ⚠️ Failed to cancel {order_id}: {e}")
+            DB.execute("DELETE FROM grid_pairs WHERE id = ?", (row_id,))
         DB.commit()
 
         # 🔍 Check if next_buy already exists with an INCOMPLETE status
         cur = DB.execute("""
             SELECT COUNT(*) FROM grid_pairs
-             WHERE symbol = ?
-               AND buy_price = ?
-               AND status != 'completed'
+             WHERE symbol = ? AND buy_price = ? AND status != 'completed'
         """, (sym, next_buy))
         count = cur.fetchone()[0]
 
@@ -414,6 +520,8 @@ def set_band_close(sym, cfg):
 
     except Exception as e:
         log.error(f"{sym} ❌ set_band_close failed: {e}")
+
+#chillin
 def update_config_with_dynamic_usdt(CONFIG, exchange, percent=0.04):
     try:
         balance_info = exchange.fetch_balance()
@@ -426,7 +534,6 @@ def update_config_with_dynamic_usdt(CONFIG, exchange, percent=0.04):
 
     except Exception as e:
         log.error(f"❌ Failed to fetch balance or update config: {e}")
-
 
 # ─── MAIN EXECUTION ────────────────────────────────────────────────────────────
 if __name__ == "__main__":
