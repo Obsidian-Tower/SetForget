@@ -14,28 +14,34 @@ db_path = "gridbot_pairs.sqlite3"
 # Connect to the database
 conn = sqlite3.connect(db_path)
 
-# Load active rows into a DataFrame, parsing timestamps
+# Load specific columns from active rows, parsing timestamps
 df = pd.read_sql_query(
     """
-    SELECT *
+    SELECT symbol,
+           buy_order_submitted,
+           buy_order_filled,
+           buy_cost,
+           buy_price,
+           sell_price,
+           sell_cost,
+           status
       FROM grid_pairs
-     WHERE status != 'completed'
     """,
     conn,
-    parse_dates=["buy_order_submitted", "sell_order_submitted", "buy_order_filled", "sell_order_filled"]
+    parse_dates=["buy_order_submitted", "buy_order_filled"]
 )
 
 # Close DB connection
 conn.close()
 
-# Sort by symbol, then by buy_order_submitted timestamp
+# Sort by symbol and buy_order_submitted
 df = df.sort_values(by=["symbol", "buy_order_submitted"], ascending=[True, True])
 
-# Nice console print
+# Print concise view
 if df.empty:
     print("No active records found in 'grid_pairs'.")
 else:
-    print("\n📊 Current grid_pairs table (sorted by symbol, buy_order_submitted):\n")
+    print("\n📊 Current grid_pairs summary:\n")
     if USE_TABULATE:
         print(tabulate(df, headers="keys", tablefmt="psql", showindex=False))
     else:
