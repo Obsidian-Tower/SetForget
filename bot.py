@@ -207,7 +207,8 @@ def check_fills_for_symbol(sym, cfg):
             cost = order["cost"]
 
             # Pull trade info
-            trades = exchange.fetch_my_trades(symbol=sym, params={"order": r["buy_order_id"]})
+            trades = exchange.fetch_my_trades(symbol=sym)
+            trades = [t for t in trades if t.get("order") == r["buy_order_id"]]
             trade = trades[0] if trades else {}
             fee = trade.get("fee", {})
             fee_cost = fee.get("cost", 0.0)
@@ -261,7 +262,8 @@ def check_fills_for_symbol(sym, cfg):
             cost = order["cost"]
 
             # Pull trade info
-            trades = exchange.fetch_my_trades(symbol=sym, params={"order": r["sell_order_id"]})
+            trades = exchange.fetch_my_trades(symbol=sym)
+            trades = [t for t in trades if t.get("order") == r["sell_order_id"]]
             trade = trades[0] if trades else {}
             fee = trade.get("fee", {})
             fee_cost = fee.get("cost", 0.0)
