@@ -204,7 +204,6 @@ def check_fills_for_symbol(sym, cfg):
                 continue
 
             filled = float(order["filled"])
-            price_exec = (order["cost"] / filled) if filled else r["buy_price"]
             cost = order["cost"]
 
             # Pull trade info
@@ -222,8 +221,7 @@ def check_fills_for_symbol(sym, cfg):
 
             DB.execute("""
                 UPDATE grid_pairs
-                   SET buy_filled=?,
-                       buy_exchange_price=?,
+                   SET buy_order_filled=?,
                        buy_cost=?,
                        buy_fee_cost=?,
                        buy_fee_currency=?,
@@ -234,7 +232,6 @@ def check_fills_for_symbol(sym, cfg):
                  WHERE id=?
             """, (
                 datetime.utcnow(),
-                price_exec,
                 cost,
                 fee_cost,
                 fee_currency,
@@ -259,7 +256,6 @@ def check_fills_for_symbol(sym, cfg):
                 continue
 
             filled = float(order["filled"])
-            price_exec = (order["cost"] / filled) if filled else r["sell_price"]
             cost = order["cost"]
 
             # Pull trade info
@@ -277,8 +273,7 @@ def check_fills_for_symbol(sym, cfg):
 
             DB.execute("""
                 UPDATE grid_pairs
-                   SET sell_filled=?,
-                       sell_exchange_price=?,
+                   SET sell_order_filled=?,
                        sell_cost=?,
                        sell_fee_cost=?,
                        sell_fee_currency=?,
@@ -289,7 +284,6 @@ def check_fills_for_symbol(sym, cfg):
                  WHERE id=?
             """, (
                 datetime.utcnow(),
-                price_exec,
                 cost,
                 fee_cost,
                 fee_currency,
