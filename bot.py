@@ -227,7 +227,6 @@ def check_fills_for_symbol(sym, cfg):
                        buy_fee_currency=?,
                        buy_fees=?,
                        buy_fees_data=?,
-                       buy_net_real=?,
                        status='ready_to_sell'
                  WHERE id=?
             """, (
@@ -237,7 +236,6 @@ def check_fills_for_symbol(sym, cfg):
                 fee_currency,
                 fees_count,
                 fees_json,
-                net,
                 r["id"]
             ))
             DB.commit()
@@ -269,8 +267,6 @@ def check_fills_for_symbol(sym, cfg):
             fees_count = len(fees_list)
             fees_json = json.dumps(fees_list)
 
-            net = filled - fee_cost
-
             DB.execute("""
                 UPDATE grid_pairs
                    SET sell_order_filled=?,
@@ -279,7 +275,6 @@ def check_fills_for_symbol(sym, cfg):
                        sell_fee_currency=?,
                        sell_fees=?,
                        sell_fees_data=?,
-                       sell_net_real=?,
                        status='completed'
                  WHERE id=?
             """, (
@@ -289,7 +284,6 @@ def check_fills_for_symbol(sym, cfg):
                 fee_currency,
                 fees_count,
                 fees_json,
-                net,
                 r["id"]
             ))
             DB.commit()
