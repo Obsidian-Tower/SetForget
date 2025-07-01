@@ -4,7 +4,7 @@ import socket
 import time
 import logging
 import sqlite3
-from datetime import datetime
+from datetime import datetime,timezone
 
 import ccxt
 from dotenv import load_dotenv
