@@ -230,7 +230,7 @@ def check_fills_for_symbol(sym, cfg):
                        status='ready_to_sell'
                  WHERE id=?
             """, (
-                datetime.utcnow(),
+                datetime.now(timezone.utc),
                 cost,
                 fee_cost,
                 fee_currency,
@@ -278,7 +278,7 @@ def check_fills_for_symbol(sym, cfg):
                        status='completed'
                  WHERE id=?
             """, (
-                datetime.utcnow(),
+                datetime.now(timezone.utc),
                 cost,
                 fee_cost,
                 fee_currency,
@@ -427,8 +427,8 @@ def retry_failed_sells_for_symbol(sym):
                      WHERE id=?
                 """, (
                     o["id"],
-                    datetime.utcnow(),
-                    datetime.utcnow(),
+                    datetime.now(timezone.utc),
+                    datetime.now(timezone.utc),
                     amount,
                     current_price,
                     cost,
