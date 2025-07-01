@@ -14,7 +14,7 @@ db_path = "gridbot_pairs.sqlite3"
 # Connect to the database
 conn = sqlite3.connect(db_path)
 
-# Load the table into a DataFrame, parsing the buy_submitted column as datetime
+# Load active rows into a DataFrame, parsing timestamps
 df = pd.read_sql_query(
     """
     SELECT *
@@ -22,23 +22,21 @@ df = pd.read_sql_query(
      WHERE status != 'completed'
     """,
     conn,
-    parse_dates=["buy_submitted"]
+    parse_dates=["buy_order_submitted", "sell_order_submitted", "buy_order_filled", "sell_order_filled"]
 )
 
 # Close DB connection
 conn.close()
 
-# Sort by symbol, then by buy_submitted timestamp
-df = df.sort_values(by=["symbol", "buy_submitted"], ascending=[True, True])
+# Sort by symbol, then by buy_order_submitted timestamp
+df = df.sort_values(by=["symbol", "buy_order_submitted"], ascending=[True, True])
 
 # Nice console print
 if df.empty:
-    print("No records found in 'grid_pairs'.")
+    print("No active records found in 'grid_pairs'.")
 else:
-    print("\n📊 Current grid_pairs table (sorted by symbol, buy_submitted):\n")
+    print("\n📊 Current grid_pairs table (sorted by symbol, buy_order_submitted):\n")
     if USE_TABULATE:
-        # pretty print via tabulate
         print(tabulate(df, headers="keys", tablefmt="psql", showindex=False))
     else:
-        # fallback to pandas default
         print(df.to_string(index=False))
