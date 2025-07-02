@@ -242,7 +242,7 @@ def check_fills_for_symbol(sym, cfg):
 
             log.info(
                 f"🟢 {sym} BUY FILLED: qty={filled} "
-                f"fee={fee_cost} {fee_currency} net={net:.8f} buy@{price_exec:.8f}"
+               #NEED UPDATE f"fee={fee_cost} {fee_currency} net={net:.8f} buy@{price_exec:.8f}"
             )
             submit_sell_pair(sym, r, net)
 
@@ -290,7 +290,7 @@ def check_fills_for_symbol(sym, cfg):
 
             log.info(
                 f"🔴 {sym} SELL FILLED: qty={filled} "
-                f"fee={fee_cost} {fee_currency} net={net:.8f} sell@{price_exec:.8f}"
+                #need update f"fee={fee_cost} {fee_currency} net={net:.8f} sell@{price_exec:.8f}"
             )
             log.info(f"🏁 {sym} PAIR DONE: buy@{r['buy_price']} → sell@{r['sell_price']}")
 
