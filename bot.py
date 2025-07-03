@@ -112,6 +112,17 @@ def get_price(sym):
 
 #updated needs test
 def submit_buy_pair(sym, buy_price, sell_price, qty):
+    # ── GUARD: prevent duplicate buys on active bands ──────────────
+    cur = DB.execute("""
+        SELECT 1 FROM grid_pairs
+         WHERE symbol = ? AND buy_price = ? AND status != 'completed'
+         LIMIT 1
+    """, (sym, buy_price))
+    if cur.fetchone():
+        log.warning(f"{sym} ⛔ CAUGHT ATTEMPTED BUY of already existing active row at buy@{buy_price}")
+        return
+
+    # ── No active row exists → safe to place buy ──────────────────
     log.info(f"▶️ ATTEMPT BUY {sym}: qty={qty} @ buy@{buy_price}")
     o = exchange.create_limit_buy_order(sym, qty, buy_price)
 
