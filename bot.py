@@ -217,6 +217,7 @@ def check_fills_for_symbol(sym, cfg):
             fees_count = len(fees_list)
             fees_json = json.dumps(fees_list)
 
+            net = filled - fee_cost
 
             DB.execute("""
                 UPDATE grid_pairs
